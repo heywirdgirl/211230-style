@@ -1,662 +1,110 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="xUsl253JgwBhSrlqQqYJvC3i0iYBnUyW9HTOZFhS">
-    <meta name="stripe-key" content="pk_live_b2J665phAY1VVd9Hjz6HwcY300h6QtdUxY">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="csrf-token" content="6KOmVskqYbBVpyKTqnBKP8kAaL0aMwxuQPaGhDGM">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>
+            style
+        </title>
 
-    <title>JobHuntBuddy</title>
-    <meta name="description"
-        content="Never forget to follow up on a job application again by tracking applications on a kanban board, creating reminders, and keeping all of your resumes and cover letters in one place.">
-    <meta name="image" content="https://jobhuntbuddy.co/apple-touch-icon-180x180.png">
+        <meta name="description" content="Discover the best news, products and people ranked by twitter influence.">
+        <meta name="image" content="https://iconomist.com/img/screenshot.png">
+        <meta name="google-site-verification" content="gF0gWIPS8HPiOUD0gRQkpoQ8eiRgiNFQmPARTJNwRJE" />
 
-    <!-- Favicon -->
-   
-    <!-- Schema.org for Google -->
-    <meta itemprop="name" content="JobHuntBuddy">
-    <meta itemprop="description" content="Manage your job search by tracking applications. discovering contacts ">
-    <meta itemprop="image" content="https://jobhuntbuddy.co/apple-touch-icon-180x180.png">
 
-            <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="JobHuntBuddy">
-    <meta name="twitter:description" content="Manage your job search by tracking applications. discovering contacts ">
-    <meta name="twitter:site" content="@jobhuntbuddy">
-    <meta name="twitter:image:src" content="https://jobhuntbuddy.co/twitter-card-min.png">
+        
+        <meta name="apple-mobile-web-app-title" content="iconomist.">
+        <meta name="application-name" content="iconomist.">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
 
-    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="JobHuntBuddy">
-    <meta name="og:description" content="Manage your job search by tracking applications. discovering contacts ">
-    <meta name="og:image" content="https://jobhuntbuddy.co/twitter-card-min.png">
-    <meta name="og:url" content="https://jobhuntbuddy.co">
-    <meta name="og:site_name" content="JobHuntBuddy">
-    <meta name="og:type" content="website">
-    
-    <!-- Styles -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid] {display: none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+        <meta name="twitter:site" content="@fiftydotone">
+
+        <meta name="og:site_name" content="iconomist.">
+        <meta name="og:type" content="website">
+
+                    <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="iconomist. – Curating the wild world of crypto">
+            <meta name="twitter:description" content="Discover the best news, products and people ranked by twitter influence.">
+            <meta name="twitter:image:src" content="https://iconomist.com/img/screenshot.png">
+
+            <meta name="og:title" content="iconomist. – Curating the wild world of crypto">
+            <meta name="og:description" content="Discover the best news, products and people ranked by twitter influence.">
+            <meta name="og:image" content="https://iconomist.com/img/screenshot.png">
+        
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
+
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88034096-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-88034096-2');
+        </script>
+
     </head>
-<body class="antialiased leading-none bg-gray-100">
-    <div id="app" class="relative h-screen bg-blue-900">
-        
-    
-    <!--Nav-->
-    <nav id="header" class="sticky w-full z-30 top-0 text-white brand-gradient ">
 
-    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+    <body class="bg-gray-200">
 
-        <div class="py-2 pl-4 flex items-center">
-            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-3xl flex items-center"
-                href="/">
-                <img src="https://jobhuntbuddy.co/images/logos/v1/vector/default-monochrome.svg" alt="logo"
-                    class="mr-3 h-6 md:h-10 text-orange-500">
-            </a>
-        </div>
+        <div id="app" class="max-w-xl mx-auto relative " v-cloak>
+            <div class="mx-4 mt-12">
 
-        <div class="block lg:hidden pr-2">
-            <ul class="flex justify-end flex-1 items-center text-xs">
-                <li class="mr-2">
-                    <a class="inline-block text-indigo-100 font-medium no-underline hover:text-white py-2 px-4"
-                       href="https://jobhuntbuddy.co/blog">
-                        Blog
-                    </a>
-                </li>
-                                    <li class="mr-2">
-                        <a class="inline-block text-indigo-100 font-medium no-underline hover:text-white py-2 px-4"
-                           href="https://jobhuntbuddy.co/login">
-                            Login
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://jobhuntbuddy.co/register"
-                           class="bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full py-2 px-5 shadow hover:shadow-lg transform transition-all ease-in-out duration-200">
-                            Get Started
-                        </a>
-                    </li>
-                            </ul>
-        </div>
-
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-white p-4 lg:p-0 z-20"
-            id="nav-content">
-            <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                <li class="mr-3">
-                    <a class="inline-block text-indigo-100 font-medium no-underline hover:text-white py-2 px-4"
-                       href="https://jobhuntbuddy.co/blog">
-                        Blog
-                    </a>
-                </li>
-                                <li class="mr-3">
-                    <a class="inline-block text-indigo-100 font-medium no-underline hover:text-white py-2 px-4"
-                        href="https://jobhuntbuddy.co/login">
-                        Login
-                    </a>
-                </li>
-                <li>
-                    <a href="https://jobhuntbuddy.co/register"
-                        class="mx-auto inline-block lg:mx-0 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full mt-4 lg:mt-0 py-3 px-8 shadow hover:shadow-lg transform transition-all ease-in-out duration-200">
-                        Get Started
-                    </a>
-                </li>
-                            </ul>
-        </div>
-    </div>
-</nav>
-
-
-    <div class="m-6 fixed right-0 bottom-0">
-        <a href="https://www.producthunt.com/posts/job-hunt-buddy?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-job-hunt-buddy"
-           target="_blank"><img
-                src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=233352&theme=dark&period=daily"
-                alt="Job Hunt Buddy - A better way to track and organize your job search | Product Hunt Embed"
-                style="width: 250px; height: 54px;" width="250px" height="54px"/></a>
-    </div>
-
-    <div class="leading-normal tracking-normal text-white brand-gradient overflow-x-hidden">
-
-        <!--Hero-->
-        <div class="relative pt-6 lg:pt-20 z-10">
-            <div class="container px-4 mx-auto flex flex-wrap flex-col lg:flex-row items-center lg:items-start">
-                <!--Left Col-->
-                <div class="xl:pr-6 flex flex-col w-full lg:w-1/2 justify-center items-start lg:text-left">
-                    <h2 class="mb-4 text-5xl lg:text-7xl font-semibold tracking-wide leading-tight font-ubuntu">
-                        Manage your <span class="text-orange-500">Job Hunt</span>
-                    </h2>
-                    <p class="text-2xl text-indigo-200 leading-normal tracking-wide">
-                        Helping you keep track of job applications with detailed job profiles, contact discovery, and
-                        document management.
-                    </p>
-                    <div class="mt-8 w-full flex flex-col lg:flex-row justify-center items-center">
-                        
-                        <a href="https://jobhuntbuddy.co/register"
-                           class="lg:mr-6 flex-shrink-0 bg-orange-500 hover:bg-orange-600 text-base md:text-xl text-orange-100 font-semibold rounded-full py-2 md:py-3 px-5 md:px-8 shadow hover:shadow-lg transition-colors ease-in-out duration-200">
-                            Get Started for FREE
-                        </a>
-                        <a href="/demo-user"
-                           class="my-3 lg:my-0 block py-1 px-3 text-orange-500 text-lg lg:text-xl rounded-lg hover:bg-indigo-800"
-                           onclick="window.fathom.trackGoal('G0GGX0RG', 0);">
-                            Or try out the demo
-                        </a>
-                    </div>
-                </div>
-                <!--Right Col-->
-                <div class="w-full flex-1 z-10 inline-flex items-end transform lg:translate-x-32 lg:scale-125">
-                    <img class="w-full rounded" src="https://jobhuntbuddy.co/images/landing/landing-header-min.png">
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="relative -mt-24">
-            <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            >
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g transform="translate(-2.000000, 44.000000)" fill="#ebf4ff" fill-rule="nonzero">
-                        <path
-                            d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                            opacity="0.100000001"></path>
-                        <path
-                            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                            opacity="0.100000001"></path>
-                        <path
-                            d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                            id="Path-4" opacity="0.200000003"></path>
-                    </g>
-                    <g transform="translate(-4.000000, 76.000000)" fill="#ebf4ff" fill-rule="nonzero">
-                        <path
-                            d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
-                        </path>
-                    </g>
-                </g>
-            </svg>
-        </div>
-
-        
-        <main class="bg-indigo-100 pt-12 md:pt-8">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <section class="border-b bg-indigo-100">
-                <div class="container mx-auto p-6 md:p-12 grid md:grid-cols-2 gap-4 md:gap-8">
-                    <div class="text-lg text-gray-700 leading-relaxed flex flex-col justify-center">
-                        <h3 class="mb-2 md:mb-4 text-2xl md:text-4xl text-gray-800 font-semibold leading-snug font-ubuntu">
-                            Everything at a glance
-                        </h3>
-
-                        <ul class="mb-2 md:mb-4 flex flex-wrap justify-start text-lg text-gray-700">
-                            <li class="mb-2 mr-8 flex items-center">
-                    <span class="mr-3 text-indigo-600">
-                        <svg class="h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                             viewBox="0 0 24 24" stroke="currentColor">
-                            <path
-                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                            </path>
-                        </svg>
-                    </span>
-                                Salary
-                            </li>
-                            <li class="mb-2 mr-8 flex items-center">
-                    <span class="mr-3 text-indigo-600">
-                        <svg class="h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                             viewBox="0 0 24 24" stroke="currentColor">
-                            <path
-                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                            </path>
-                        </svg>
-                    </span>
-                                Location
-                            </li>
-                            <li class="mb-2 mr-8 flex items-center">
-                    <span class="mr-3 text-indigo-600">
-                        <svg class="h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                             viewBox="0 0 24 24" stroke="currentColor">
-                            <path
-                                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                            </path>
-                        </svg>
-                    </span>
-                                Company Summary
-                            </li>
-                        </ul>
-                        <p class="mb-2 md:mb-4">
-                            Build a lead profile with all the specifics you care about; <span
-                                class="text-indigo-600 font-medium">Job details</span>, <span
-                                class="text-indigo-600 font-medium">documents</span>, <span
-                                class="text-indigo-600 font-medium">contacts</span>, and <span
-                                class="text-indigo-600 font-medium">notes</span>.
-                        </p>
-                        <p class="mb-2 md:mb-4 font-semibold">
-                            No more digging around looking for job descriptions
-                        </p>
-                        <p class="mb-2">
-                            Import the job description so you can quickly reference it whenever you need a refresh.
-                        </p>
-                    </div>
-                    <div class="w-full">
-                        <img class="w-full" src="https://jobhuntbuddy.co/images/landing/lead_modal.png">
-                    </div>
-                </div>
-            </section>
-
-            <section class="bg-white border-b">
-                <div class="container mx-auto p-6 md:p-12 grid md:grid-cols-2 gap-4 md:gap-8">
-                    <div class="w-full row-start-2 md:row-start-1">
-                        <img class="w-full" src="https://jobhuntbuddy.co/images/landing/discover-min.png">
-                    </div>
-                    <div class="text-lg text-gray-700 leading-relaxed flex flex-col justify-center">
-                        <h3 class="mb-2 md:mb-4 text-2xl md:text-4xl text-gray-800 font-semibold leading-snug font-ubuntu">
-                            Find the right person to contact
-                        </h3>
-                        <p class="mb-2 md:mb-4">
-                            It helps to know who's going to be looking at your application.
-                        </p>
-                        <p class="mb-2 md:mb-4 font-semibold">
-                            Not sure who to contact?
-                        </p>
-                        <p class="mb-2">
-                            We'll help you <span class="text-indigo-600 font-medium">discover names and emails</span>
-                            from
-                            the company you're applying to.
-                        </p>
-                        <p class="mb-2 md:mb-4 font-semibold">
-                            Know who to contact, but don't have their email address?
-                        </p>
-                        <p class="mb-2">
-                            We have you covered there too!
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="border-b">
-                <div class="container mx-auto p-6 md:p-12 grid md:grid-cols-2 gap-4 md:gap-8">
-                    <div class="text-lg text-gray-700 leading-relaxed flex flex-col justify-center">
-                        <h3 class="mb-2 md:mb-4 text-2xl md:text-4xl text-gray-800 font-semibold leading-snug font-ubuntu">
-                            Never forget to follow up on an application again
-                        </h3>
-                        <p class="mb-2">
-                            Create <span class="text-indigo-600 font-semibold">tasks</span> and <span
-                                class="text-indigo-600 font-semibold">reminders</span> to keep yourself on top of
-                            everything that
-                            needs to be done to land that job.
-                        </p>
-                        <p class="mb-2 md:mb-4 font-semibold">
-                            What do you need to do today to land that job?
-                        </p>
-                        <ul class="text-lg text-gray-700">
-                            <li class="flex items-start mb-2">
-                    <span class="mr-3 text-indigo-600">
-                        <svg class="h-6" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd" fill-rule="evenodd"></path>
-                        </svg>
-                    </span>
-                                Apply for 3 jobs today
-                            </li>
-                            <li class="flex items-start mb-2">
-                    <span class="mr-3 text-indigo-600">
-                        <svg class="h-6" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd" fill-rule="evenodd"></path>
-                        </svg>
-                    </span>
-                                Follow up with your last application
-                            </li>
-                            <li class="flex items-start mb-2">
-                    <span class="mr-3 text-indigo-600">
-                        <svg class="h-6" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd" fill-rule="evenodd"></path>
-                        </svg>
-                    </span>
-                                Finish writing your cover letter
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-full">
-                        <img class="w-full" src="https://jobhuntbuddy.co/images/landing/tasks-min.png">
-                    </div>
-                </div>
-            </section>
-
-            <section class="bg-white">
-                <div class="container mx-auto p-6 md:p-12 grid md:grid-cols-2 gap-4 md:gap-8">
-                    <div class="w-full row-start-2 md:row-start-1">
-                        <img class="w-full shadow-md" src="https://jobhuntbuddy.co/images/landing/document-list-min.png">
-                    </div>
-                    <div class="text-lg text-gray-700 leading-relaxed flex flex-col justify-center">
-                        <h3 class="mb-2 md:mb-4 text-2xl md:text-4xl text-gray-800 font-semibold leading-snug font-ubuntu">
-                            Keep all of your documents in one place
-                        </h3>
-                        <p class="mb-2 md:mb-4">
-                            Quickly access all of your <span class="text-indigo-600 font-semibold">resumes</span> and
-                            <span class="text-indigo-600 font-semibold">cover letters</span>. Download them from
-                            anywhere or share them with employers.
-                        </p>
-                        <p class="mb-2 md:mb-4">
-                            <span class="text-indigo-600 font-semibold">Link your documents to a lead</span> to easily
-                            reference them whenever you need.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="py-8" id="pricing">
-
-    <div class="container px-2 pt-4 pb-12 mx-auto text-gray-800">
-
-        <h3 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Pricing</h3>
-        <div class="block w-full pb-4 my-4">
-            <div class="w-64 h-1 mx-auto rounded-t opacity-25 brand-gradient"></div>
-        </div>
-
-
-
-        <div class="flex flex-col justify-center pb-12 my-12 sm:flex-row sm:my-4">
-
-            <div class="flex flex-col w-11/12 mx-auto mt-4 bg-white rounded-none lg:w-1/4 lg:mx-0 lg:rounded-l-lg">
-                <div class="flex-1 overflow-hidden text-gray-600 bg-white rounded-t rounded-b-none shadow">
-                    <div class="p-8 text-3xl font-bold text-center border-b-4">Trial</div>
-                    <ul class="w-full text-sm text-center">
-                        <li class="py-4 border-b">Track 10 leads</li>
-                        <li class="py-4 border-b">Store 2 documents</li>
-                        <li class="py-4 border-b">Discover
-                            1 email</li>
-                        <li class="py-4 border-b">Kanban board</li>
-                        <li class="py-4 border-b">Tasks & reminders</li>
-                    </ul>
-                </div>
-                <div class="flex-none p-6 mt-auto overflow-hidden bg-white rounded-t-none rounded-b shadow">
-                    <div class="flex flex-col items-center w-full pt-6 text-center">
-                        <span class="text-3xl font-bold text-gray-600">FREE</span>
-                        <span class="text-lg font-semibold text-gray-500">for 7 days</span>
-                    </div>
-                    <div class="flex items-center justify-center">
-                        <a href="https://jobhuntbuddy.co/register"
-                            class="px-8 py-4 mx-auto my-6 rounded-full shadow-lg lg:mx-0 btn-outline">
-                            Sign Up
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div
-                class="z-10 flex flex-col w-11/12 mx-auto mt-4 bg-white rounded-lg shadow-lg lg:w-1/3 lg:mx-0 sm:-mt-6">
-                <div class="flex-1 overflow-hidden bg-white rounded-t rounded-b-none shadow">
-                    <div class="p-8 text-3xl font-bold text-center">Basic</div>
-                    <div class="w-full h-1 py-0 my-0 brand-gradient"></div>
-                    <ul class="w-full font-bold text-center">
-                        <li class="py-4 border-b">Track 25 leads</li>
-                        <li class="py-4 border-b">Store 5 documents</li>
-                        <li class="py-4 border-b">Discover
-                            5 emails / month</li>
-                        <li class="py-4 border-b">Kanban board</li>
-                        <li class="py-4 border-b">Tasks & reminders</li>
-                    </ul>
-                </div>
-                <div class="flex-none p-6 mt-auto overflow-hidden bg-white rounded-t-none rounded-b shadow">
-                    <div class="w-full pt-6 text-4xl font-bold text-center">$10
-                        <span class="text-base">/
-                            per month</span></div>
-                    <div class="flex items-center justify-center">
-                        <a href="https://jobhuntbuddy.co/register"
-                            class="px-8 py-4 mx-auto my-6 font-bold text-white transition-transform duration-200 transform rounded-full shadow-xs lg:mx-0 brand-gradient hover:shadow-lg hover:scale-105">
-                            Sign Up
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="flex flex-col w-11/12 mx-auto mt-4 bg-white rounded-none lg:w-1/4 lg:mx-0 lg:rounded-l-lg">
-                <div class="flex-1 overflow-hidden text-gray-600 bg-white rounded-t rounded-b-none shadow">
-                    <div class="w-full p-8 text-3xl font-bold text-center border-b-4">Plus</div>
-                    <ul class="w-full text-sm font-medium text-center text-gray-600">
-                        <li class="py-4 border-b">Track Unlimited leads</li>
-                        <li class="py-4 border-b">Store 25 documents</li>
-                        <li class="py-4 border-b">Discover
-                            15 emails / month</li>
-                        <li class="py-4 border-b">Kanban board</li>
-                        <li class="py-4 border-b">Tasks & reminders</li>
-                    </ul>
-                </div>
-                <div class="flex-none p-6 mt-auto overflow-hidden bg-white rounded-t-none rounded-b shadow">
-                    <div class="w-full pt-6 text-3xl font-bold text-center text-gray-600">
-                        $25 <span class="text-base">/
-                            per month</span></div>
-                    <div class="flex items-center justify-center">
-                        <a href="https://jobhuntbuddy.co/register"
-                            class="px-8 py-4 mx-auto my-6 rounded-full shadow-lg lg:mx-0 btn-outline">
-                            Sign Up
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-</section>
-
-        </main>
-
-
-        <!-- Change the colour #f8fafc to match the previous section colour -->
-        <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        >
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-                    <g class="wave" fill="#ebf4ff">
-                        
-                        <path
-                            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
-                        </path>
-                    </g>
-                    <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-                        <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
-                            <path
-                                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                                opacity="0.100000001"></path>
-                            <path
-                                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                                opacity="0.100000001"></path>
-                            <path
-                                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                                opacity="0.200000003"></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </svg>
-
-        <section class=" container mx-auto text-center py-6 lg:mb-12" id="reserve-invite">
-
-            <h3 class="w-full my-2 text-3xl lg:text-5xl font-semibold leading-tight text-center text-white font-ubuntu">
-                Ready to take control of your job hunt?
-            </h3>
-            <div class="w-full mb-2 lg:mb-4">
-                <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-            </div>
-
-            <h3 class="m-6 text-xl lg:text-2xl leading-tight">
-                Start organizing your search and keep everything at a glance
-            </h3>
-
-            <div class="mx-auto px-4 w-full max-w-2xl flex items-center justify-evenly">
-                <a href="https://jobhuntbuddy.co/register"
-                   class="lg:mr-6 flex-shrink-0 bg-orange-500 hover:bg-orange-600 text-base md:text-xl text-orange-100 font-semibold rounded-full py-2 md:py-3 px-5 md:px-8 shadow hover:shadow-lg transition-colors ease-in-out duration-200">
-                    Get Started for FREE
-                </a>
-                <a href="/demo-user"
-                   class="my-3 lg:my-0 block py-1 px-3 text-orange-500 text-lg lg:text-xl rounded-lg hover:bg-indigo-800"
-                   onclick="window.fathom.trackGoal('G0GGX0RG', 0);">
-                    Or try out the demo
-                </a>
                 
+    <div class="flex flex-col pt-6 pb-8 max-w-xl mx-auto">
+
+        <div class="flex justify-end font-bold mb-4 border-b-2 border-white">
+            <a href="#" class="px-1 mx-3 hover:text-purple-light border-b-2 border-white" style="margin-bottom: -2px;">Projects</a>
+        </div>     
+           
+        <a href="211230-1737-tailwind-template.html" target="_blank">
+            <div class="flex flex-col bg-white p-4 mb-4 rounded-lg shadow overflow-hidden hover:scale-110">
+                <div class="flex flex-col md:flex-row md:truncate">
+                    <div class="flex flex-col flex-grow md:flex-row md:truncate md:items-center">                        
+                        <div class="flex-grow w-full md:truncate">
+                            <h3 class="md:truncate">211230-1737-tailwind-template<span class=" text-sm font-normal text-slate-500 ml-2">/ a simple tailwind template</span></h3>
+                            <p class="whitespace-pre-wrap text-grey-darker"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </a>
+
+        <a href="211230-usemarzipan.html" target="_blank">
+            <div class="flex flex-col bg-white p-4 mb-4 rounded-lg shadow overflow-hidden hover:scale-110">
+                <div class="flex flex-col md:flex-row md:truncate">
+                    <div class="flex flex-col flex-grow md:flex-row md:truncate md:items-center">                        
+                        <div class="flex-grow w-full md:truncate">
+                            <h3 class="md:truncate">211230-usemarzipan<span class="text-sm font-normal text-slate-500 ml-2">/ a simple tailwind template</span></h3>
+                            <p class="whitespace-pre-wrap text-grey-darker"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </a>
+
+        <a href="211230-1737-tailwind-template.html" target="_blank">
+            <div class="flex flex-col bg-white p-4 mb-4 rounded-lg shadow overflow-hidden hover:scale-110">
+                <div class="flex flex-col md:flex-row md:truncate">
+                    <div class="flex flex-col flex-grow md:flex-row md:truncate md:items-center">                        
+                        <div class="flex-grow w-full md:truncate">
+                            <h3 class="md:truncate">211230-1737-tailwind-template<span class=" text-sm font-normal text-slate-500 ml-2">/ a simple tailwind template</span></h3>
+                            <p class="whitespace-pre-wrap text-grey-darker"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </a>
+
+    </div>
             </div>
-        </section>
-
-
-        <!--Footer-->
-        <footer class="bg-gray-900">
-    <div class="container mx-auto py-10 px-8">
-
-        <ul class="flex justify-center items-center space-x-8 mb-4 text-lg">
-            <li class="inline-block mr-2 md:block md:mr-0">
-                <a href="https://jobhuntbuddy.co/about" class="no-underline text-gray-500 hover:text-orange-500">About</a>
-            </li>
-            <li class="inline-block mr-2 md:block md:mr-0">
-                <a href="https://jobhuntbuddy.co/blog"
-                   class="no-underline text-gray-500 hover:text-orange-500">Blog</a>
-            </li>
-            <li class="inline-block mr-2 md:block md:mr-0">
-                <a href="https://jobhuntbuddy.co/partners" class="no-underline text-gray-500 hover:text-orange-500">Partners</a>
-            </li>
-            <li class="inline-block mr-2 md:block md:mr-0">
-                <a href="https://jobhuntbuddy.co/help" class="no-underline text-gray-500 hover:text-orange-500">Help</a>
-            </li>
-            <li class="inline-block mr-2 md:block md:mr-0">
-                <a href="https://jobhuntbuddy.co/terms-and-conditions"
-                   class="no-underline text-gray-500 hover:text-orange-500">Terms</a>
-            </li>
-            <li class="inline-block mr-2 md:block md:mr-0">
-                <a href="https://jobhuntbuddy.co/privacy-policy"
-                   class="no-underline text-gray-500 hover:text-orange-500">Privacy</a>
-            </li>
-        </ul>
-
-        <ul class="my-6 flex justify-center items-center space-x-8">
-            <li class="inline-block">
-                <a href="https://facebook.com/jobhuntbuddyapp/" target="_blank"
-                   class="text-gray-400 facebook-btn" aria-label="Facebook">
-                    <svg class="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <path
-                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
-                    </svg>
-                </a>
-            </li>
-            <li class="inline-block">
-                <a href="https://twitter.com/jobhuntbuddy/" target="_blank"
-                   class="text-gray-400 twitter-btn" aria-label="Twitter">
-                    <svg class="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path
-                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-                    </svg>
-                </a>
-            </li>
-            <li class="inline-block">
-                <a href="https://www.linkedin.com/company/jobhuntbuddy/" target="_blank"
-                   class="text-gray-400 linkedin-btn" aria-label="LinkedIn">
-                    <svg class="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path
-                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-                    </svg>
-                </a>
-            </li>
-        </ul>
-
-        <p class="text-center text-gray-600 text-sm">
-            &copy; 2021 JobHuntBuddy. All rights reserved.
-        </p>
-
-    </div>
-</footer>
-    </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
-    <script src="https://js.stripe.com/v3/"></script>
-    <script src="/livewire/livewire.js?id=ef0c4e092e24439bb958" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'xUsl253JgwBhSrlqQqYJvC3i0iYBnUyW9HTOZFhS';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};document.addEventListener("DOMContentLoaded", function () {window.livewire.start();});</script>
-    <script src="/js/app.js?id=e94e7d351f70ad45e9be"></script>
-    <script>
-    var scrollpos = window.scrollY;
-    var header = document.getElementById("header");
-    var navcontent = document.getElementById("nav-content");
-    var navaction = document.getElementById("navAction");
-    var mobilenavaction = document.getElementById("mobileNavAction");
-    var bottomCta = document.getElementById("reserve-invite");
-    var brandname = document.getElementById("brandname");
-    var toToggle = document.querySelectorAll(".toggleColour");
-
-    function slideToCTA() {
-        if (window.location.pathname === '/') {
-            bottomCta.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
-        } else {
-            window.location.href = "/#reserve-invite"
-        }
-    }
-
-    document.addEventListener('scroll', function() {
-
-        scrollpos = window.scrollY;
-
-        if(scrollpos > 10){
-            header.classList.add("shadow");
-        }
-        else {
-            header.classList.remove("shadow");
-        }
-    });
-</script>
-
-    <!-- Fathom - beautiful, simple website analytics -->
-        <script src="https://cdn.usefathom.com/script.js" site="BLEQFQWL" defer></script>
-        <!-- / Fathom -->
-</body>
+        </div>
+    </body>
 
 </html>
