@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en" style="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="alternate" type="application/atom+xml" href="https://pingping.io/feed" title="Blogposts on PingPing.io">
+    <meta name="description"
+          content="PingPing is a simple to use website and certificate monitoring service.">
+    <meta name="keywords" content="monitoring, pingping, service check, notification, ssl, certificate">
+            <meta name="robots" content="index, follow">
+                <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Simple Website and SSL Monitoring">
+        <meta name="twitter:description" content="We ping your websites and will notify you when they are down.">
+        <meta name="twitter:image" content="https://pingping.io/images/marketing/twitter_card.png">
+        <meta name="twitter:url" content="https://pingping.io">
+        <meta name="twitter:site" content="@pingpingapp">
+        <meta name="twitter:creator" content="@stefanbauerme">
+    
+            <meta property="og:title" content="Simple Website and SSL Monitoring">
+        <meta property="og:description" content="We ping your websites and will notify you when they are down.">
+        <meta property="og:image" content="https://pingping.io/images/marketing/twitter_card.png">
+        <meta property="og:url" content="https://pingping.io">
+        <meta property="og:site_name" content="PingPing">
+    
+    
+    <meta name="csrf-token" content="MPTqekFa1cg7q1zFLxOpVTQWJWMpdFjlwLZSeq0c">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="PingPing">
+    <meta name="application-name" content="PingPing">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+            <title>A simple uptime and SSL monitoring | PingPing | PingPing</title>
+    <script src="./tailwind300.js"></script>
+    <link href="/css/app.css?id=0d5302be1a86d7909ae4" rel="stylesheet">
+
+            <script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+            m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+    })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'RCHFERQB');
+    fathom('trackPageview');
+</script>
+    
+        <script>
+        var ffWidgetId = 'e4753ee2-515f-4460-b139-4438e6b77241';
+        var ffWidgetScript = document.createElement("script");
+        ffWidgetScript.type = "text/javascript";
+        ffWidgetScript.src = 'https://freddyfeedback.com/widget/freddyfeedback.js';
+
+        document.head.appendChild(ffWidgetScript);
+        window.addEventListener('load', function() {
+            freddyWidget.setOptions({
+                custom_fields: {
+                    user_id: 0,
+                    email: 'guest'
+                }
+            });
+        });
+    </script>
+    <style>[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid] {display: none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+    <style>
+        [x-cloak] { display: none; }
+    </style>
+</head>
+<body class="antialiased font-sans bg-gray-800">
+            <div id="marketing" class="bg-gray-100">
+        <div class="relative z-10 bg-gray-100">
+    <div class="relative">
+        <div x-data="{ open: false }" class="relative pt-6 pb-10">
+            <div class="max-w-screen-lg mx-auto px-4 sm:px-6">
+                <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
+                    <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+                        <div class="flex items-center justify-between w-full md:w-auto">
+                            <a href="https://pingping.io" aria-label="Home">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1057 298" class="h-8 sm:h-10 w-auto">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <g fill="#2b79c1">
+                                            <path d="M119 213.62447v-74.24894C119 132.5389 113.4005 127 106.49823 127 99.59523 127 94 132.5389 94 139.37553v74.24894C94 220.4611 99.59523 226 106.49823 226 113.4005 226 119 220.4611 119 213.62447m38-.9564v-47.33684C157 158.51868 151.4043 153 144.4993 153 137.5957 153 132 158.5187 132 165.33123v47.33684C132 219.4806 137.5957 225 144.4993 225c6.905 0 12.5007-5.5194 12.5007-12.33193"></path>
+                                            <path d="M118.50105 0c-32.6831-.00772-62.3875 13.33825-83.79115 34.85872C13.2832 56.35744-.0056 86.19072 0 119.01792c-.0056 22.57904 6.29005 43.78433 17.2012 61.7844 9.6133 15.86325 22.80212 29.26888 38.45736 39.1183v65.7211C55.65856 292.4656 61.16864 298 67.964 298c6.79534 0 12.30333-5.53438 12.30333-12.3583V106.3964c0-6.8267-5.508-12.35688-12.30334-12.35688-6.79537 0-12.30545 5.53017-12.30545 12.35688v82.61835c-6.7674-6.13316-12.67445-13.20486-17.43253-21.06068-8.64392-14.27748-13.61376-30.97328-13.61586-48.93614.0056-26.0784 10.4897-49.57493 27.5001-66.67928 17.02996-17.0861 40.42685-27.61573 66.39078-27.62345 25.96532.00772 49.35942 10.53736 66.38868 27.62345 17.0104 17.10435 27.4945 40.6009 27.5015 66.6793-.0035 15.49962-3.70135 30.04175-10.26187 42.9195-6.55982 12.8665-15.9991 24.04548-27.44978 32.6482-5.4423 4.0932-6.55143 11.8346-2.48177 17.3016 4.07177 5.46347 11.78546 6.58172 17.22566 2.492 14.43636-10.85324 26.32036-24.91873 34.60925-41.1772 8.291-16.24933 12.9687-34.7134 12.9673-54.1841.0056-32.8272-13.2832-62.66048-34.7078-84.1592C180.88787 13.33825 151.18346-.00772 118.50106 0z"
+                                            ></path>
+                                        </g>
+                                        <path fill="#2b4964"
+                                              d="M295.20898 68.09766v62.73046h19.92383c4.27413 0 8.3016-.82193 12.08254-2.46582 3.78095-1.64388 7.10155-3.87954 9.96192-6.70703 2.86036-2.82748 5.1289-6.1481 6.80566-9.9619 1.67678-3.81383 2.51515-7.8906 2.51515-12.23048 0-4.40564-.83837-8.5153-2.51514-12.3291-1.67676-3.81384-3.9453-7.13445-6.80565-9.96193-2.86037-2.8275-6.1974-5.0467-10.01123-6.65772-3.81383-1.611-7.82485-2.4165-12.0332-2.4165H295.209zm-20.91015 126.44726V57.64258c0-1.44662.26302-2.81103.78906-4.09326.52603-1.28224 1.26576-2.40006 2.21922-3.35352.95345-.95345 2.05484-1.6932 3.3042-2.21924 1.24935-.52604 2.6302-.78906 4.14258-.78906h30.3789c4.7344 0 9.3208.62467 13.7593 1.87402 4.4385 1.24936 8.59746 3.02473 12.47704 5.32618 3.87958 2.30144 7.43032 5.0467 10.65234 8.23584 3.22203 3.18914 5.96728 6.72345 8.23584 10.60302 2.26857 3.87958 4.04394 8.03855 5.32618 12.47705 1.28223 4.4385 1.92334 9.0249 1.92334 13.7593 0 14.3347-5.16174 26.6637-15.48536 36.9873-10.1921 10.1921-22.4882 15.2881-36.88867 15.2881H295.209v42.80663c0 2.89325-1.0192 5.35904-3.0576 7.39746-2.03846 2.0384-4.50426 3.0576-7.3975 3.0576-2.89324 0-5.35903-1.0192-7.39745-3.05762-2.03843-2.03842-3.05762-4.5042-3.05762-7.39746zm135.02832-119.6416c0 3.35353-1.18358 6.21386-3.55078 8.58106-2.3672 2.3672-5.22753 3.55078-8.58106 3.55078-3.3535 0-6.21383-1.1836-8.58103-3.5508-2.3672-2.36718-3.55078-5.2275-3.55078-8.58104 0-3.35353 1.18357-6.21385 3.55077-8.58105 2.3672-2.3672 5.22752-3.5508 8.58105-3.5508 3.35354 0 6.21387 1.1836 8.58107 3.5508 2.3672 2.3672 3.55077 5.22752 3.55077 8.58105zM386.9375 194.64355V104.8877c0-2.89325 1.00276-5.3426 3.0083-7.34815 2.00554-2.00554 4.42202-3.0083 7.2495-3.0083 2.8275 0 5.24398 1.00276 7.24952 3.0083 2.00555 2.00554 3.04118 4.4549 3.10694 7.34814v89.75584c-.06576 2.89325-1.1014 5.3426-3.10694 7.34815-2.00554 2.00553-4.42202 3.0083-7.2495 3.0083-2.8275 0-5.24397-1.00277-7.24952-3.0083-2.00554-2.00556-3.0083-4.4549-3.0083-7.34816zm62.33594-89.95312c8.74548-6.77282 19.03607-10.15918 30.87207-10.15918 6.90435 0 13.46337 1.34797 19.67726 4.04395 6.2139 2.69597 11.68797 6.3618 16.42237 10.99755 4.7344 4.63577 8.4824 10.0934 11.24414 16.37305 2.76173 6.27966 4.14258 12.97018 4.14258 20.07178v48.62597c0 2.89325-1.00276 5.3426-3.0083 7.34815C526.61798 203.99724 524.2015 205 521.374 205c-2.89324 0-5.3426-1.00276-7.34814-3.0083-2.00554-2.00555-3.0083-4.4549-3.0083-7.34815V146.0176c0-4.20836-.82193-8.1865-2.46582-11.93457-1.6439-3.74806-3.8631-7.01935-6.65772-9.81396-2.7946-2.7946-6.0659-5.01382-9.81396-6.6577-3.74807-1.6439-7.72622-2.46583-11.93457-2.46583-4.2741 0-8.2687.8055-11.9839 2.4165-3.7152 1.61102-6.98647 3.83024-9.81395 6.65773-2.8275 2.82748-5.0467 6.1152-6.65772 9.86328-1.611 3.74807-2.4165 7.72622-2.4165 11.93458v48.62597c0 2.89325-1.00276 5.3426-3.0083 7.34815-2.00555 2.00554-4.42203 3.0083-7.2495 3.0083-2.89326 0-5.34262-1.00276-7.34816-3.0083-2.00554-2.00555-3.0083-4.4549-3.0083-7.34815v-89.7559c0-2.8275 1.00276-5.2604 3.0083-7.29883 2.00554-2.03842 4.4549-3.05762 7.34814-3.05762 2.8275 0 5.24398 1.0192 7.24953 3.05762 2.00554 2.03842 3.0083 4.40558 3.0083 7.10156zm153.07812 10.45508c-4.8659 0-9.40297.92058-13.61133 2.76174-4.20835 1.84115-7.85773 4.3234-10.94824 7.44677-3.09053 3.1234-5.5399 6.7892-7.34816 10.99757-1.80828 4.20836-2.7124 8.67967-2.7124 13.41406 0 4.7344.90412 9.2057 2.7124 13.41407 1.80827 4.20834 4.25763 7.87416 7.34814 10.99755 3.0905 3.12338 6.73988 5.60562 10.94823 7.44677 4.20837 1.84116 8.74543 2.76172 13.61134 2.76172 4.80016 0 9.30434-.92056 13.5127-2.76172 4.20835-1.84115 7.87417-4.33982 10.99756-7.4961 3.12338-3.15626 5.58918-6.82207 7.39746-10.99755 1.80827-4.17548 2.7124-8.63035 2.7124-13.36474 0-4.7344-.90413-9.18927-2.7124-13.36475-1.80828-4.17548-4.27408-7.8413-7.39746-10.99756-3.1234-3.15626-6.7892-5.65494-10.99756-7.4961-4.20836-1.84115-8.71254-2.7617-13.5127-2.7617zm34.62012 77.72267C627.10835 200.9561 615.56843 205 602.35156 205c-15.25528 0-28.27468-5.39187-39.0586-16.17578-10.7839-10.7839-16.17577-23.8033-16.17577-39.0586 0-15.25528 5.39185-28.27468 16.17576-39.0586 10.7839-10.7839 23.8033-16.17577 39.0586-16.17577 15.12377 0 28.14317 5.39187 39.0586 16.17578 10.7839 10.7839 16.17577 23.8033 16.17577 39.0586v54.83984c0 4.7344-.7233 9.2057-2.16992 13.41406-1.44662 4.20836-3.45213 8.07144-6.0166 11.58936-2.56446 3.5179-5.58917 6.69055-9.0742 9.51804-3.48506 2.8275-7.2495 5.2111-11.29347 7.15088-4.04397 1.9398-8.2687 3.4357-12.67432 4.4878-4.4056 1.05208-8.81116 1.57812-13.2168 1.57812-5.26043 0-10.42216-.67398-15.48534-2.02197-5.06317-1.348-9.86325-3.33707-14.4004-5.9673-4.53712-2.6302-8.6961-5.88506-12.47704-9.76464-3.78094-3.87957-6.98648-8.21937-9.6167-13.01953-1.0521-1.51237-1.57812-3.3535-1.57812-5.52343 0-2.959.98633-5.40835 2.959-7.34814 1.97266-1.9398 4.43845-2.90967 7.39745-2.90967 1.97267 0 3.6001.46028 4.88233 1.38086 1.28223.92058 3.04116 2.95897 5.27685 6.11524 2.2357 3.15626 4.20833 5.5563 5.91797 7.2002 7.49613 7.49612 16.53738 11.24413 27.12402 11.24413 10.6524 0 19.66077-3.68227 27.0254-11.0469 4.53713-5.52346 6.80566-10.88245 6.80566-16.07714v-11.7373zm56.71387-124.7705v62.73046h19.92382c4.2741 0 8.30158-.82193 12.08253-2.46582 3.78094-1.64387 7.10154-3.87953 9.9619-6.70702 2.86037-2.82748 5.1289-6.1481 6.80567-9.9619 1.67677-3.81383 2.51514-7.8906 2.51514-12.23048 0-4.40563-.83835-8.5153-2.51512-12.3291-1.67676-3.81383-3.9453-7.13444-6.80566-9.96192-2.86036-2.8275-6.1974-5.0467-10.01122-6.65772-3.81382-1.611-7.82485-2.4165-12.0332-2.4165h-19.92383zM672.7754 194.54492V57.64258c0-1.44662.263-2.81103.78905-4.09326.52605-1.28224 1.2658-2.40006 2.21924-3.35352.95344-.95345 2.05483-1.6932 3.3042-2.21924 1.24934-.52604 2.6302-.78906 4.14256-.78906h30.3789c4.7344 0 9.32078.62467 13.75928 1.87402 4.4385 1.24936 8.59748 3.02473 12.47705 5.32618 3.87957 2.30144 7.43032 5.0467 10.65234 8.23584 3.22202 3.18914 5.96727 6.72345 8.23584 10.60302 2.26855 3.87958 4.04393 8.03855 5.32616 12.47705 1.28223 4.4385 1.92334 9.0249 1.92334 13.7593 0 14.3347-5.16173 26.6637-15.48535 36.9873-10.1921 10.1921-22.4882 15.2881-36.88868 15.2881h-19.92382v42.80663c0 2.89325-1.0192 5.35904-3.05762 7.39746-2.0384 2.0384-4.5042 3.0576-7.39743 3.0576-2.89324 0-5.35904-1.0192-7.39746-3.05762-2.0384-2.03842-3.0576-4.5042-3.0576-7.39746zm135.0283-119.6416c0 3.35353-1.18357 6.21386-3.55077 8.58106-2.3672 2.3672-5.22752 3.55078-8.58105 3.55078-3.35354 0-6.21386-1.1836-8.58106-3.5508-2.3672-2.36718-3.55078-5.2275-3.55078-8.58104 0-3.35353 1.18358-6.21385 3.55078-8.58105 2.3672-2.3672 5.22752-3.5508 8.58105-3.5508 3.35354 0 6.21386 1.1836 8.58106 3.5508 2.3672 2.3672 3.55078 5.22752 3.55078 8.58105zm-22.38964 119.74023V104.8877c0-2.89325 1.00276-5.3426 3.0083-7.34815 2.00555-2.00554 4.42203-3.0083 7.2495-3.0083 2.8275 0 5.24398 1.00276 7.24953 3.0083 2.00552 2.00554 3.04116 4.4549 3.1069 7.34814v89.75584c-.06574 2.89325-1.1014 5.3426-3.10692 7.34815-2.00556 2.00553-4.42204 3.0083-7.24952 3.0083-2.8275 0-5.24397-1.00277-7.24952-3.0083-2.00554-2.00556-3.0083-4.4549-3.0083-7.34816zM847.75 104.69043c8.7455-6.77282 19.03607-10.15918 30.87207-10.15918 6.90433 0 13.46335 1.34797 19.67725 4.04395 6.2139 2.69597 11.68796 6.3618 16.42236 10.99755 4.7344 4.63577 8.4824 10.0934 11.24414 16.37305 2.76173 6.27966 4.14258 12.97018 4.14258 20.07178v48.62597c0 2.89325-1.00276 5.3426-3.0083 7.34815-2.00555 2.00554-4.42203 3.0083-7.2495 3.0083-2.89326 0-5.34262-1.00276-7.34816-3.0083-2.00554-2.00555-3.0083-4.4549-3.0083-7.34815V146.0176c0-4.20836-.82193-8.1865-2.46582-11.93457-1.6439-3.74806-3.8631-7.01935-6.65772-9.81396-2.7946-2.7946-6.0659-5.01382-9.81396-6.6577-3.74806-1.6439-7.72622-2.46583-11.93457-2.46583-4.2741 0-8.2687.8055-11.9839 2.4165-3.71517 1.61102-6.98646 3.83024-9.81395 6.65773-2.8275 2.82748-5.0467 6.1152-6.65772 9.86328-1.611 3.74807-2.4165 7.72622-2.4165 11.93458v48.62597c0 2.89325-1.00276 5.3426-3.0083 7.34815-2.00554 2.00554-4.42202 3.0083-7.2495 3.0083-2.89326 0-5.3426-1.00276-7.34816-3.0083-2.00554-2.00555-3.0083-4.4549-3.0083-7.34815v-89.7559c0-2.8275 1.00276-5.2604 3.0083-7.29883 2.00555-2.03842 4.4549-3.05762 7.34815-3.05762 2.82747 0 5.24395 1.0192 7.2495 3.05762s3.0083 4.40558 3.0083 7.10156zm153.07812 10.45508c-4.8659 0-9.40297.92058-13.61132 2.76174-4.20836 1.84115-7.85774 4.3234-10.94825 7.44677-3.0905 3.1234-5.53986 6.7892-7.34814 10.99757-1.80826 4.20836-2.7124 8.67967-2.7124 13.41406 0 4.7344.90414 9.2057 2.7124 13.41407 1.8083 4.20834 4.25765 7.87416 7.34817 10.99755 3.0905 3.12338 6.73988 5.60562 10.94824 7.44677 4.20836 1.84116 8.7454 2.76172 13.61133 2.76172 4.80016 0 9.30435-.92056 13.5127-2.76172 4.20835-1.84115 7.87417-4.33982 10.99756-7.4961 3.1234-3.15626 5.58917-6.82207 7.39745-10.99755 1.80828-4.17548 2.7124-8.63035 2.7124-13.36474 0-4.7344-.90412-9.18927-2.7124-13.36475s-4.27407-7.8413-7.39746-10.99756c-3.1234-3.15626-6.7892-5.65494-10.99757-7.4961-4.20835-1.84115-8.71254-2.7617-13.5127-2.7617zm34.62012 77.72267C1025.5849 200.9561 1014.045 205 1000.82812 205c-15.25528 0-28.27468-5.39187-39.0586-16.17578-10.7839-10.7839-16.17577-23.8033-16.17577-39.0586 0-15.25528 5.39187-28.27468 16.17578-39.0586 10.7839-10.7839 23.8033-16.17577 39.0586-16.17577 15.12377 0 28.14317 5.39187 39.0586 16.17578 10.7839 10.7839 16.17577 23.8033 16.17577 39.0586v54.83984c0 4.7344-.7233 9.2057-2.16992 13.41406-1.44662 4.20836-3.45214 8.07144-6.0166 11.58936-2.56447 3.5179-5.58918 6.69055-9.07422 9.51804-3.48505 2.8275-7.2495 5.2111-11.29346 7.15088-4.04396 1.9398-8.2687 3.4357-12.67432 4.4878-4.40562 1.05208-8.81117 1.57812-13.2168 1.57812-5.26043 0-10.42217-.67398-15.48534-2.02197-5.06318-1.348-9.86326-3.33707-14.4004-5.9673-4.53713-2.6302-8.6961-5.88506-12.47704-9.76464-3.78095-3.87957-6.98648-8.21937-9.6167-13.01953-1.0521-1.51237-1.57813-3.3535-1.57813-5.52343 0-2.959.98632-5.40835 2.95898-7.34814 1.97267-1.9398 4.43847-2.90967 7.39747-2.90967 1.97266 0 3.6001.46028 4.88232 1.38086 1.28223.92058 3.04117 2.95897 5.27685 6.11524 2.23567 3.15626 4.2083 5.5563 5.91795 7.2002 7.49613 7.49612 16.5374 11.24413 27.12403 11.24413 10.65238 0 19.66076-3.68227 27.02538-11.0469 4.53713-5.52346 6.80566-10.88245 6.80566-16.07714v-11.7373z"
+                                        ></path>
+                                    </g>
+                                </svg>
+                            </a>
+                            <div class="-mr-2 flex items-center md:hidden">
+                                <button x-on:click="open = true" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true">
+                                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex md:space-x-10">
+                        <a href="https://pingping.io#features" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Features</a>
+                        <a href="https://pingping.io#pricing" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</a>
+                        <a href="https://pingping.io/blog" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Blog</a>
+                        <a href="https://docs.pingping.io" target="_blank" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Docs</a>
+                    </div>
+                    <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+                                                    <span class="inline-flex">
+                                <a href="https://pingping.io/login" class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium text-blue-600 hover:text-blue-500 focus:outline-none transition duration-150 ease-in-out">
+                                    Login
+                                </a>
+                            </span>
+                            <span class="inline-flex rounded-md shadow ml-2">
+                                <a href="https://pingping.io/signup" class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out">
+                                    Get started
+                                </a>
+                            </span>
+                        
+                                            </div>
+                </nav>
+            </div>
+
+            <div x-show="open" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-10" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-cloak>
+                <div class="rounded-lg shadow-md">
+                    <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                        <div class="px-5 pt-4 flex items-center justify-between">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 298" class="fill-current h-8 text-blue-600">
+                                    <g fill-rule="evenodd">
+                                        <path d="M119 213.624v-74.248c0-6.837-5.6-12.376-12.502-12.376C99.595 127 94 132.539 94 139.376v74.248C94 220.461 99.595 226 106.498 226S119 220.461 119 213.624M157 212.668v-47.337c0-6.812-5.596-12.331-12.5-12.331s-12.5 5.519-12.5 12.331v47.337c0 6.813 5.596 12.332 12.5 12.332s12.5-5.52 12.5-12.332"></path>
+                                        <path d="M118.501 0C85.818-.008 56.114 13.338 34.71 34.859 13.283 56.357-.006 86.19 0 119.018c-.006 22.579 6.29 43.784 17.201 61.784a119.266 119.266 0 0038.458 39.119v65.72c0 6.825 5.51 12.359 12.305 12.359s12.303-5.534 12.303-12.358V106.396c0-6.826-5.508-12.356-12.303-12.356-6.795 0-12.305 5.53-12.305 12.356v82.619c-6.768-6.133-12.675-13.205-17.433-21.06-8.644-14.278-13.614-30.974-13.616-48.937.006-26.078 10.49-49.575 27.5-66.68 17.03-17.085 40.427-27.615 66.391-27.623 25.965.008 49.36 10.538 66.389 27.624 17.01 17.104 27.494 40.6 27.501 66.679-.003 15.5-3.701 30.042-10.262 42.92a94.699 94.699 0 01-27.45 32.648c-5.442 4.093-6.55 11.834-2.481 17.301 4.072 5.464 11.785 6.582 17.225 2.492a119.383 119.383 0 0034.61-41.177c8.29-16.25 12.967-34.713 12.967-54.184.006-32.827-13.283-62.66-34.708-84.16C180.888 13.339 151.183-.007 118.501 0z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="-mr-2">
+                                <button x-on:click="open = false" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
+                                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="px-2 pt-2 pb-3">
+                            <a href="https://pingping.io#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Features</a>
+                            <a href="https://pingping.io#pricing" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Pricing</a>
+                            <a href="https://docs.pingping.io" target="_blank" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Docs</a>
+                            <a href="https://pingping.io/blog" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Blog</a>
+                        </div>
+                        <div>
+                                                            <a href="https://pingping.io/login" class="block w-full px-5 py-3 text-center font-medium text-blue-600 bg-gray-50 hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:bg-gray-100 focus:text-blue-700 transition duration-150 ease-in-out" role="menuitem">
+                                    Log in
+                                </a>
+                            
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="bg-gray-100">
+    <div class="relative overflow-hidden -mt-28 pt-24">
+        <div class="block absolute inset-y-0 h-full w-full">
+            <div class="relative h-full">
+                <svg class="absolute right-full transform translate-y-1/3 translate-x-1/4 md:translate-y-1/2 sm:translate-x-1/2 lg:translate-x-full" width="404" height="900" fill="none" viewBox="0 0 404 784">
+                    <defs>
+                        <pattern id="e229dbec-10e9-49ee-8ec3-0286ca089edf" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="900" fill="url(#e229dbec-10e9-49ee-8ec3-0286ca089edf)" />
+                </svg>
+                <svg class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 sm:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-x-1/2" width="404" height="1000" fill="none" viewBox="0 0 404 784">
+                    <defs>
+                        <pattern id="d2a68204-c383-44b1-b99f-42ccff4e5365" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="1000" fill="url(#d2a68204-c383-44b1-b99f-42ccff4e5365)" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="relative block inset-y-0 h-full w-full">
+            <div class="mt-6 mx-auto max-w-screen-xl px-4 sm:px-6 md:mt-12">
+                <div class="text-center">
+                    <h2 class="text-4xl tracking-tight leading-10 font-bold text-gray-900 sm:text-5xl sm:leading-none md:text-5xl">
+                        Website down? SSL invalid?
+                        <br>
+                        <span class="text-blue-600">We notify you instantly!</span>
+                    </h2>
+                    <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                        Get notified by the simplest uptime monitoring service in the world, when your website is down or your certificate becomes invalid. No more, no less.
+                    </p>
+                    <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+                        <div class="rounded-md shadow">
+                            <a href="https://pingping.io/signup" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                                Get started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative mt-12">
+            <div class="absolute inset-0 flex flex-col">
+                <div class="flex-1"></div>
+                <div class="flex-1 w-full bg-gray-800"></div>
+            </div>
+            <div class="max-w-screen-lg mx-auto px-6 sm:px-20">
+                <img class="relative rounded-lg shadow-lg" src="https://pingping.io/images/marketing/application-screenshot.png" alt="PingPing.io screenshot">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-800">
+        <div class="max-w-screen-lg mx-auto pt-16 pb-16 px-4 sm:px-6 md:pb-20 lg:px-8">
+            <h3 class="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">15,000+ Websites. Trusted by companies that love simple products.</h3>
+            <div class="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
+                <div class="col-span-1 flex justify-center items-center md:col-span-2 lg:col-span-1">
+                    <a href="https://usefathom.com?ref=pingping.io" target="_blank">
+                        <img class="h-8" src="https://pingping.io/images/logos/fathom-analytics-logo.svg" alt="Fathom Analytics">
+                    </a>
+                </div>
+                <div class="col-span-1 flex justify-center items-center md:col-span-2 lg:col-span-1">
+                    <a href="https://inertiajs.com?ref=pingping.io" target="_blank">
+                        <img class="h-6" src="https://pingping.io/images/logos/inertia-logo.svg" alt="Inertia.js">
+                    </a>
+                </div>
+                <div class="col-span-1 flex justify-center items-center md:col-span-2 lg:col-span-1">
+                    <a href="https://laravel-news.com?ref=pingping.io" target="_blank">
+                        <img class="h-8" src="https://pingping.io/images/logos/laravel-news-logo.svg" alt="Laravel News">
+                    </a>
+                </div>
+                <div class="col-span-1 flex justify-center items-center md:col-span-2 lg:col-span-1">
+                    <a href="https://beyondco.de?ref=pingping.io" target="_blank">
+                        <img class="h-8" src="https://pingping.io/images/logos/beyondcode-logo.svg" alt="BeyondCode">
+                    </a>
+                </div>
+                <div class="col-span-1 flex justify-center items-center md:col-span-2 lg:col-span-1">
+                    <a href="https://transistor.fm?ref=pingping.io" target="_blank">
+                        <img class="h-10" src="https://pingping.io/images/logos/transistor-logo.svg" alt="Transistor FM">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="py-16 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 overflow-hidden lg:py-24" id="features">
+    <div class="relative max-w-xl mx-auto px-8 lg:max-w-screen-xl">
+        <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
+            <defs>
+                <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
+        </svg>
+
+        <div class="relative lg:text-center">
+            <h3 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                No frills, just essential
+            </h3>
+            <p class="mt-4 max-w-3xl mx-auto text-xl leading-7 text-gray-500">
+                PingPing focuses on the essential. Know if your site is offline or your SSL certificate is invalid. Fast and reliable. No more, no less.
+            </p>
+        </div>
+
+        <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+            <div class="relative">
+                <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+                    Simple, fast, affordable monitoring
+                </h4>
+                <p class="mt-3 text-lg leading-7 text-gray-500">
+                     Our multi-language status pages and 30-second checks are the perfect way to get a good overview of the performance and uptime of your website.
+                </p>
+
+                <ul class="mt-10">
+                    <li>
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h5 class="text-lg leading-6 font-medium text-gray-900">30-second checks</h5>
+                                <p class="mt-2 text-base leading-6 text-gray-500 relative z-10">
+                                    We offer 30 seconds checks for all your websites. This allows us to let you know when your website goes down <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">10 times faster</span> than other tools. Know within seconds when there's a problem so you can take immediate action.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mt-10">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h5 class="text-lg leading-6 font-medium text-gray-900">Public status pages</h5>
+                                <p class="mt-2 text-base leading-6 text-gray-500 z-10 relative">
+                                    <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">Uptime Statistics, Live Status, Downtimes</span> and much more!
+                                </p>
+                                <p class="mt-2 text-base leading-6 text-gray-500">
+                                    All plans get a multi-language status page per website. All the important website data on a single page. You decide if it's public or private. Check out the <a target="_blank" href="https://pingping.io/CDcjOL1Y" class="text-blue-600 hover:text-blue-500 font-medium focus:outline-none focus:shadow-outline-blue">live demo</a>.
+                                </p>
+                                <p class="mt-2 text-base leading-6 text-gray-500 z-10 relative">
+                                    Oh and we provide <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">Custom Domains</span> of course as well to make it unique.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mt-10">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" class=" w-6 h-6">
+                                        <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM2 13a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm14 1a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h5 class="text-lg leading-6 font-medium text-gray-900">The plan that fits your needs</h5>
+                                <p class="mt-2 text-base leading-6 text-gray-500 relative z-10">
+                                    Stop guessing what your best important websites are, and <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">track all websites</span>. We offer quality monitoring for affordable pricing, powerful notifications and beautiful status pages.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mt-10 -mx-4 relative lg:mt-0">
+                <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+                    <defs>
+                        <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+                </svg>
+                <img class="relative mx-auto" width="490" src="https://pingping.io/images/marketing/usps/statuspage.png" alt="">
+            </div>
+        </div>
+
+        <svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404" height="784" fill="none" viewBox="0 0 404 784">
+            <defs>
+                <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+        </svg>
+
+        <div class="relative mt-12 sm:mt-16 lg:mt-24">
+            <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div class="lg:col-start-2">
+                    <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+                        Keep your team informed instantly
+                    </h4>
+                    <p class="mt-3 text-lg leading-7 text-gray-500">
+                        If something goes wrong you want to be the first to know about it. Our notifications make it very simple to get notified in your preferred way. With that you can bring your whole team along.
+                    </p>
+
+                    <ul class="mt-10">
+                        <li>
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                        <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h5 class="text-lg leading-6 font-medium text-gray-900">Bring the whole team</h5>
+                                    <p class="mt-2 text-base leading-6 text-gray-500 relative z-10">
+                                        We understand how important it is to have a full access with your whole team. Give your entire <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">team access</span> to your metrics while keeping admin access.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mt-10">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                        <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                                            <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h5 class="text-lg leading-6 font-medium text-gray-900">Always within reach</h5>
+                                    <p class="mt-2 text-base leading-6 text-gray-500 z-10 relative">
+                                        <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">Email, Slack, Discord, Telegram, webhooks</span> and more to come!
+                                    </p>
+                                    <p class="mt-2 text-base leading-6 text-gray-500">
+                                        With a variety of notification channels, you are always aware of what is happening with your websites so you can fix any issues as soon as possible.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+                    <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+                        <defs>
+                            <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                            </pattern>
+                        </defs>
+                        <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
+                    </svg>
+                    <img class="relative mx-auto" width="490" src="https://pingping.io/images/marketing/usps/notifications-teams.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="features" class="py-16 bg-white">
+    <div class="max-w-xl lg:max-w-screen-xl mx-auto px-8">
+        <div class="lg:text-center">
+            <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                Why PingPing?
+            </h3>
+            <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
+                It's for people who just want to know if their site is on or offline.
+            </p>
+        </div>
+
+        <div class="mt-16">
+            <ul class="lg:grid lg:grid-cols-2 lg:gap-x-16 lg:gap-y-16">
+                <li>
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="clock w-6 h-6">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg leading-6 font-medium text-gray-900">30-second check interval</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                30 seconds is the perfect time to get notified if your website is down. It's fast enough to not get notified by your customers if something is wrong with your website.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mt-10 lg:mt-0">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="lock-closed w-6 h-6">
+                                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg leading-6 font-medium text-gray-900">SSL certificate checks</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                Next to downtime, the most annoying thing on a website is an invalid SSL certificate. We notify you before your SSL certificate is about to expire.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mt-10 lg:mt-0">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg leading-6 font-medium text-gray-900">Full featured API</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                We got you covered with a full featured API. Add websites get back some statistics. We also send you webhooks when something happens, so you can build your own notification system.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mt-10 lg:mt-0">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="check-circle w-6 h-6">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg leading-6 font-medium text-gray-900">What you need, and nothing more</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                We stand for simplicity. Everything we do at PingPing should make monitoring your website as simple as possible. We don't offer 1000 features, we offer just what you need.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mt-10 lg:mt-0">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="device-mobile w-6 h-6">
+                                    <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg leading-6 font-medium text-gray-900">Use from anywhere</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                PingPing is completely responsive, from desktop over your tablet to your mobile. Your websites can be accessed, added and checked on any device.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mt-10 lg:mt-0">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="office-building w-6 h-6">
+                                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg leading-6 font-medium text-gray-900">Integrate with your apps</h4>
+                            <p class="mt-2 text-base leading-6 text-gray-500">
+                                Looking to integrate uptime monitoring in your app? Let us take care of all the heavy lifting and launch it in a matter of hours.
+                                <a href="https://pingping.io/#cooperation" class="font-medium text-blue-600 hover:text-blue-500 transition ease-in-out duration-150">
+                                    Read more!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div id="cooperation" class="relative py-16 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 overflow-hidden">
+    <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+        <div class="relative h-full text-lg max-w-prose mx-auto">
+            <svg class="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+                <defs>
+                    <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                    </pattern>
+                </defs>
+                <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+            </svg>
+            <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+                <defs>
+                    <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                    </pattern>
+                </defs>
+                <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+            </svg>
+        </div>
+    </div>
+    <div class="relative px-8">
+        <div class="text-lg prose max-w-4xl mx-auto mb-6">
+            <p class="text-base text-center leading-6 text-blue-600 font-semibold tracking-wide uppercase">
+                Do it like our partners – and cooperate
+            </p>
+            <h1 class="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                Use our service in your application
+            </h1>
+        </div>
+
+        <div class="prose text-gray-500 max-w-4xl mx-auto">
+            <p>
+                Your customers ask for uptime monitoring? Awesome! You can meet their needs without the hassle of building this in your own product.
+                Power up your product with uptime and SSL monitoring from PingPing and give that extra to your customer.
+            </p>
+            <p>
+                You might be a perfect fit if:
+            </p>
+            <ul class="z-10 relative">
+                <li>you offer <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">server provisioning services</span> like <a href="https://forge.laravel.com?ref=pingping.io" class="font-normal" target="_blank">Laravel Forge</a> or <a href="https://ploi.io?ref=pingping.io" class="font-normal" target="_blank">Ploi</a></li>
+                <li>you are an <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">analytics tool</span> like <a href="https://usefathom.com/ref/QHS68W" class="font-normal" target="_blank">Fathom Analytics</a></li>
+                <li>you have <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">anything to do with servers</span> like <a href="https://m.do.co/c/dc427be31dc3" class="font-normal" target="_blank">DigitalOcean</a> or <a href="https://hetzner.cloud/?ref=Wg54QnZZDkVV" class="font-normal" target="_blank">Hetzner Cloud</a></li>
+                <li>you are a really big <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">web agency</span> like <a href="https://local.fr?ref=pingping.io" class="font-normal" target="_blank">local.fr</a></li>
+            </ul>
+            <p>
+                We can provide you with very attractive prices according to your requirements so that an integration is worth it
+                and you can offer your customers real added value. Are you interested? Then you should
+                <a class="no-underline" href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x70;&#x69;&#x6e;&#x67;&#x70;&#x69;&#x6e;&#x67;&#x2e;&#x69;&#x6f;">get in touch</a>.
+                We are looking forward to your request.
+            </p>
+        </div>
+    </div>
+</div>
+    <div id="pricing" class="bg-blue-700">
+    <div class="pt-12 sm:pt-16 lg:pt-20">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
+                    Pricing & Plans
+                </h2>
+                <p class="mt-4 text-xl leading-7 text-blue-100">
+                    We offer a 14 day trial. No credit card required.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-8 bg-gray-100 pb-14 sm:mt-12 sm:pb-14 lg:pb-16">
+        <div class="relative">
+            <div class="absolute inset-0 h-1/2 bg-blue-700"></div>
+            <pricing email="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x70;&#x69;&#x6e;&#x67;&#x70;&#x69;&#x6e;&#x67;&#x2e;&#x69;&#x6f;" />
+        </div>
+    </div>
+</div>
+    <div class="bg-gradient-to-b from-gray-100 to-white">
+    <div class="max-w-xl lg:max-w-screen-xl mx-auto pb-16 sm:pb-10 px-4 sm:px-6 lg:pb-10 lg:px-8">
+        <div class="relative max-w-lg mx-auto lg:max-w-7xl">
+
+            <div class="relative lg:text-center">
+                <h3 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                    Here's what our customers say
+                </h3>
+                <p class="mt-4 max-w-3xl mx-auto text-xl leading-7 text-gray-500">
+                    Learn how people around the globe use PingPing to monitor their websites and SSL certificates and improve their sleep.
+                </p>
+            </div>
+
+            <div class="mt-14 grid gap-10 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-12">
+                <div class="bg-white px-10 py-8 shadow-lg overflow-hidden rounded-lg flex flex-col justify-between">
+                    <div class="text-base leading-6 text-gray-500 relative z-0">
+                        <span class="absolute top-0 left-0 -mt-12 -ml-8">
+                            <span class="text-gray-100 relative leading-none" style="font-size: 20rem; z-index: -1;">“</span>
+                        </span>
+                        <p class="relative z-10">
+                            «We partnered with PingPing to provide our customers with a simplified uptime monitoring solution. <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">Their team is fantastic</span>, responsive and cares about our business. Thanks chaps!»
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://secure.gravatar.com/avatar/5ef743f9897ad0b9e529e261e9afd378?s=100&r=g&d=identicon" alt="Jack Ellis">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm leading-5 font-medium text-gray-900">
+                                <a href="https://twitter.com/JackEllis" target="_blank">
+                                    Jack Ellis
+                                </a>
+                            </p>
+                            <div class="text-sm leading-5 text-gray-500">
+                                Co-Founder of
+                                <a href="https://usefathom.com?ref=pingping.io" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Fathom Analytics</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white px-10 py-8 shadow-lg overflow-hidden rounded-lg flex flex-col justify-between">
+                    <div class="text-base leading-6 text-gray-500 relative z-0">
+                        <span class="absolute top-0 left-0 -mt-12 -ml-8">
+                            <span class="text-gray-100 relative leading-none" style="font-size: 20rem; z-index: -1;">“</span>
+                        </span>
+                        <p class="relative z-10">
+                            «After using much more complicated tools, PingPing was breath of fresh air in the monitoring space. The app is <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">wonderfully simple</span>, and beautifully designed. Highly recommend!»
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                        <div class="flex-shrink-0">
+                            <a href="https://twitter.com/adamwathan" target="_blank">
+                                <img class="h-12 w-12 rounded-full" src="https://secure.gravatar.com/avatar/6074dbe5dfa361c9888a705f40a49af4?s=100&r=g&d=identicon" alt="Jonathan Reinink">
+                            </a>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm leading-5 font-medium text-gray-900">
+                                <a href="https://twitter.com/reinink" target="_blank">
+                                    Jonathan Reinink
+                                </a>
+                            </p>
+                            <div class="text-sm leading-5 text-gray-500">
+                                Creator of
+                                <a href="https://inertiajs.com?ref=pingping.io" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Inertia.js</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white px-10 py-8 shadow-lg overflow-hidden rounded-lg flex flex-col justify-between">
+                    <div class="text-base leading-6 text-gray-500 relative z-0">
+                        <span class="absolute top-0 left-0 -mt-12 -ml-8">
+                            <span class="text-gray-100 relative leading-none" style="font-size: 20rem; z-index: -1;">“</span>
+                        </span>
+                        <p class="relative z-10">
+                            «PingPing is so simple, yet so useful. You can be setup in about two minutes and the tracking starts immediately. <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">There is no better way</span> to be instantly notified if your site has problems.»
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://secure.gravatar.com/avatar/0e7b6742f9d7e1a8a213d74b429b9e8f?s=100&r=g&d=identicon" alt="Eric L. Barnes">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm leading-5 font-medium text-gray-900">
+                                <a href="https://twitter.com/ericlbarnes" target="_blank">
+                                    Eric L. Barnes
+                                </a>
+                            </p>
+                            <div class="text-sm leading-5 text-gray-500">
+                                Founder of
+                                <a href="https://laravel-news.com?ref=pingping.io" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Laravel News</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white px-10 py-8 shadow-lg overflow-hidden rounded-lg flex flex-col justify-between">
+                    <div class="text-base leading-6 text-gray-500 relative z-0">
+                        <span class="absolute top-0 left-0 -mt-12 -ml-8">
+                            <span class="text-gray-100 relative leading-none" style="font-size: 20rem; z-index: -1;">“</span>
+                        </span>
+                        <p class="relative z-10">
+                            «Things can go wrong, things will go wrong. It sucks, but it sucks less when you’re the first person to know when a bad thing happens. <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">PingPing to the rescue</span>.»
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://secure.gravatar.com/avatar/db96965799d9c57cfa3688a02a18be4d?s=100&r=g&d=identicon" alt="Mohamed Said">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm leading-5 font-medium text-gray-900">
+                                <a href="https://twitter.com/themsaid" target="_blank">
+                                    Mohamed Said
+                                </a>
+                            </p>
+                            <div class="text-sm leading-5 text-gray-500">
+                                Author of
+                                <a href="https://learn-laravel-queues.com?ref=pingping.io" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Learn Laravel Queues</a> and
+                                Developer at
+                                <a href="https://laravel.com?ref=pingping.io" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Laravel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white px-10 py-8 shadow-lg overflow-hidden rounded-lg flex flex-col justify-between">
+                    <div class="text-base leading-6 text-gray-500 relative z-0">
+                        <span class="absolute top-0 left-0 -mt-12 -ml-8">
+                            <span class="text-gray-100 relative leading-none" style="font-size: 20rem; z-index: -1;">“</span>
+                        </span>
+                        <p class="relative z-10">
+                            «PingPing's integration into Fathom Analytics is a match made in heaven. It's the <span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">fastest uptime monitoring</span> service that I have ever used.»
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://secure.gravatar.com/avatar/4ab80a0b1222ce0250cb7d1d76e0283a?s=100&r=g&d=identicon" alt="Marcel Pociot">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm leading-5 font-medium text-gray-900">
+                                <a href="https://twitter.com/marcelpociot" target="_blank">
+                                    Marcel Pociot
+                                </a>
+                            </p>
+                            <div class="text-sm leading-5 text-gray-500">
+                                Co-Founder of
+                                <a href="https://beyondco.de?ref=pingping.io" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">BeyondCode</a> and
+                                <a href="https://beyondco.de/video-courses?ref=pingping.io" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Course Creator</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white px-10 py-8 shadow-lg overflow-hidden rounded-lg flex flex-col justify-between">
+                    <div class="text-base leading-6 text-gray-500 relative z-0">
+                        <span class="absolute top-0 left-0 -mt-12 -ml-8">
+                            <span class="text-gray-100 relative leading-none" style="font-size: 20rem; z-index: -1;">“</span>
+                        </span>
+                        <p class="relative z-10">
+                            «<span class="inline-block mt-0 rounded-lg font-medium text-blue-800 bg-blue-100 -mx-2 px-2 relative" style="z-index: -1;">PingPing monitors my site 24/7</span>, which gives me more time to do the things I enjoy. It takes only a few seconds to get started, so don't wait for your site to go down first.»
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://secure.gravatar.com/avatar/552823aca84be32d7500c29d5bbff275?s=100&r=g&d=identicon" alt="James Brooks">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm leading-5 font-medium text-gray-900">
+                                <a href="https://twitter.com/jbrooksuk" target="_blank">
+                                    James Brooks
+                                </a>
+                            </p>
+                            <div class="text-sm leading-5 text-gray-500">
+                                Developer at
+                                <a href="https://laravel.com?ref=pingping.io" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Laravel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="bg-white">
+    <div class="max-w-xl lg:max-w-screen-xl mx-auto pt-8 pb-16 px-8 sm:pt-8 sm:pb-20 lg:pt-20 lg:pb-28">
+        <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
+            Frequently asked questions
+        </h2>
+        <div class="mt-6 border-t-2 border-gray-100 pt-10">
+            <dl class="lg:grid lg:grid-cols-2 lg:gap-16">
+                <div>
+                    <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            What is a website?
+                        </dt>
+                        <dd class="mt-2">
+                            <p class="text-base leading-6 text-gray-500">
+                                A website is a URL you want to ensure is always available. We'll ping it every 30 seconds on our paid plans to make sure it's not down, and also keep an eye on your SSL certificate.
+                            </p>
+                        </dd>
+                    </div>
+                    <div class="mt-12">
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            Which type of notifications do you provide?
+                        </dt>
+                        <dd class="mt-2">
+                            <p class="text-base leading-6 text-gray-500">
+                                We offer powerful notifications like email, Slack, Discord and Telegram notifications out of the box. We also provide webhook support, so you can integrate with anything else.
+                            </p>
+                        </dd>
+                    </div>
+                    <div class="mt-12">
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            Do you offer a free plan?
+                        </dt>
+                        <dd class="mt-2">
+                            <p class="text-base leading-6 text-gray-500">
+                                Unfortunately no. However, we offer the highest quality and reliability with our paid plans.
+                            </p>
+                        </dd>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <div>
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            Do you offer a trial?
+                        </dt>
+                        <dd class="mt-2">
+                            <p class="text-base leading-6 text-gray-500">
+                                Yes, we do! We offer you a 14 day trial where you can add up to 5 websites with all features available. You need more time? We're happy
+                                to extend your trial. Let us know!
+                            </p>
+                        </dd>
+                    </div>
+                    <div class="mt-12">
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            What type of payments do you accept?
+                        </dt>
+                        <dd class="mt-2">
+                            <p class="text-base leading-6 text-gray-500">
+                                We use Paddle as our payment provider. You can pay comfortably with PayPal or credit card. Whatever fits best to you. If both are not possible, please contact us.
+                            </p>
+                        </dd>
+                    </div>
+                    <div class="mt-12">
+                        <dt class="text-lg leading-6 font-medium text-gray-900">
+                            Do you offer the possibility to pay annually?
+                        </dt>
+                        <dd class="mt-2">
+                            <p class="text-base leading-6 text-gray-500">
+                                Yes, we do! You can choose if you prefer to pay monthly or annually. If you prefer annually you get one month for free.
+                            </p>
+                        </dd>
+                    </div>
+                </div>
+            </dl>
+        </div>
+    </div>
+</div>
+    <div class="bg-gray-100 pb-6">
+    <div class="text-center lg:text-left max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h3 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-tight">
+            Ready to monitor some websites?<br />
+            <span class="text-blue-600">Get started for free.</span>
+        </h3>
+        <div class="justify-center lg:justify-left mt-8 flex lg:flex-shrink-0 lg:mt-0">
+            <div class="inline-flex">
+                <a href="https://pingping.io/CDcjOL1Y" target="_blank" class="inline-flex items-center justify-center px-5 py-3 text-base leading-6 font-medium text-blue-600 hover:text-blue-500 focus:outline-none transition duration-150 ease-in-out">
+                    See status page in action
+                </a>
+            </div>
+            <div class="ml-3 inline-flex rounded-md shadow">
+                <a href="https://pingping.io/signup" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    Get started
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="bg-gray-800">
+    <div class="max-w-screen-xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="-mx-5 -my-2 flex flex-wrap justify-center">
+            <div class="px-5 py-2">
+                <a href="https://twitter.com/pingpingapp" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                    Twitter
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="https://pingping.io/terms-and-conditions" class="text-base leading-6 text-gray-300 hover:text-white">
+                    Terms
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="https://pingping.io/privacy-policy" class="text-base leading-6 text-gray-300 hover:text-white">
+                    Privacy Policy
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="https://pingping.io/imprint" class="text-base leading-6 text-gray-300 hover:text-white">
+                    Imprint
+                </a>
+            </div>
+        </nav>
+
+        <div class="mt-6 -mx-5 -my-2 text-center text-xs leading-5 font-medium">
+            <span class="mr-2 tracking-wider text-gray-500">
+                With ♥ by
+                <a href="https://twitter.com/stefanbauerme" target="_blank" rel="noopener noreferer" class="text-gray-400 hover:text-white">@stefanbauerme</a>
+                and
+                <a href="https://twitter.com/bobbybouwmann" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">@bobbybouwmann</a>
+            </span>
+        </div>
+
+        <div class="mt-2 -mx-5 -my-2 flex flex-wrap justify-center text-xs leading-5 font-medium">
+            <span class="mr-2 tracking-wider text-gray-500">
+                Feedback tracked by our friends at
+                <a href="https://freddyfeedback.com?ref=pingping.io" target="_blank" class="text-gray-400 hover:text-white">Freddy Feedback</a>
+            </span>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <script src="/livewire/livewire.js?id=1206b80829f080e0a454" data-turbolinks-eval="false"></script><script data-turbolinks-eval="false">if (window.livewire) {console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')}window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'MPTqekFa1cg7q1zFLxOpVTQWJWMpdFjlwLZSeq0c';/* Make sure Livewire loads first. */if (window.Alpine) {/* Defer showing the warning so it doesn't get buried under downstream errors. */document.addEventListener("DOMContentLoaded", function () {setTimeout(function() {console.warn("Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire\'s scripts are loaded before Alpine.\n\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js")})});}/* Make Alpine wait until Livewire is finished rendering to do its thing. */window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};document.addEventListener("DOMContentLoaded", function () {window.livewire.start();});</script>
+        <script src="/js/marketing.js?id=520f731c1a9339435f13"></script>
+</body>
+</html>

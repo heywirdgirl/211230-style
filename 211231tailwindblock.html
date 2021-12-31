@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tailwind Toolbox - Free Starter Templates and Components for Tailwind CSS</title>
+	<script src="./tailwind300.js"></script>
+	<meta name="description" content="Free open source Tailwind CSS starter templates and components to get you started quickly to creating websites in Tailwind CSS!">
+	<meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free templates,admin templates, admin template, admin dashboard, admin console, free tailwind css templates, tailwind example, tailwind skeleton">
+	<meta name="google-site-verification" content="9RGTznjgMPYBXPe1D2mq2CTQ8Ad5zK6dqXWkaxYUzBU" />
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#3b7977">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tailwindtoolbox.com/">
+<meta property="og:title" content="Tailwind Toolbox - Free Starter Templates for Tailwind CSS">
+<meta property="og:description" content="Free open source Tailwind CSS starter templates to get you started quickly to creating websites in Tailwind CSS!">
+<meta property="og:image" content="https://www.tailwindtoolbox.com/social.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.tailwindtoolbox.com/">
+<meta property="twitter:title" content="Tailwind Toolbox - Free Starter Templates and Components for Tailwind CSS">
+<meta property="twitter:description" content="Free open source Tailwind CSS starter templates and components to get you started quickly to creating websites in Tailwind CSS!">
+<meta property="twitter:image" content="https://www.tailwindtoolbox.com/social.png">
+
+<!-- Stylesheets -->
+<link href="css/tailwind.min.css?v=20210110" rel="stylesheet">
+<link href="css/carbon.min.css?v=20210406" rel="stylesheet">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"url": "https://www.tailwindtoolbox.com",
+			"name": "Tailwind Toolbox",
+			"logo": "https://www.tailwindtoolbox.com/monitor.svg",
+			"sameAs": [
+				"http://www.twitter.com/tailwindtoolbox",
+				"http://www.github.com/tailwindtoolbox"
+			]
+		}
+	</script>
+
+	        <script async defer src="https://api.tailwindtoolbox.com/latest.js"></script> 
+	<noscript><img src="https://api.tailwindtoolbox.com/image.gif" alt=""></noscript>
+
+</head>
+
+<body class="bg-brand-white leading-normal tracking-normal nunito h-full overflow-x-hidden">
+
+	<!--Nav-->
+	<nav id="header" class="bg-brand fixed w-full z-10 top-0 shadow ">
+		<div class="w-full container mx-auto flex flex-wrap items-center mt-0 pt-3 pb-0 lg:py-3">
+
+			<div class="flex-1 pl-4 xl:pl-0">
+				<a class="font-extrabold text-white no-underline hover:text-white hover:no-underline" href="https://www.tailwindtoolbox.com">
+					<svg class="inline fill-current text-white h-4 md:h-6 mb-2 md:mb-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<path d="M7 3H2v14h5V3zm2 0v14h9V3H9zM0 3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm3 1h3v2H3V4zm0 3h3v2H3V7zm0 3h3v2H3v-2z"></path>
+					</svg>
+					<span class="text-xl lg:text-2xl xl:text-3xl pl-2">Tailwind Toolbox</span>
+				</a>
+			</div>
+
+			<div class="w-full flex-grow flex items-center lg:justify-end  lg:w-1/2 mt-2 lg:mt-0 bg-brand z-20 scroll bounce-in-right" id="nav-content">
+
+				<ul class="list-reset flex text-base xl:text-xl bounce-in-right">
+					<li class="mr-1">
+						<a href="https://www.tailwindtoolbox.com/starter-templates" class="my-2 py-2 no-underline hover:no-underline text-gray-100 hover:text-white flex items-center justify-center bg-transparent hover:bg-teal-500 focus:border-teal-900 font-bold px-5 rounded">
+							<svg class="h-6 w-6 fill-stroke" fill="none" viewBox=" 0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+							</svg>
+							<span class="pl-2">Templates</span></a>
+					</li>
+					<li class="mr-1">
+						<a href="https://www.tailwindtoolbox.com/starter-components" class="my-2 py-2 no-underline hover:no-underline text-gray-100 hover:text-white flex items-center justify-center bg-transparent hover:bg-teal-500 focus:border-teal-900 font-bold px-5 rounded">
+							<svg class="h-6 w-6 fill-stroke" fill="none" viewBox=" 0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+							</svg>
+							<span class="pl-2">Components</span></a>
+					</li>
+					<li class="mr-1">
+						<a href="https://www.tailwindtoolbox.com/kits" class="my-2 py-2 no-underline hover:no-underline text-gray-100 hover:text-white flex items-center justify-center bg-transparent hover:bg-teal-500 focus:border-teal-900 font-bold px-5 rounded">
+							<svg class="h-6 w-6 fill-stroke" fill="none" viewBox=" 0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+							</svg>
+							<span class="pl-2">Kits</span></a>
+					</li>
+					<li class="mr-1">
+						<a href="https://www.tailwindtoolbox.com/generators" class="my-2 py-2 no-underline hover:no-underline text-gray-100 hover:text-white flex items-center justify-center bg-transparent hover:bg-teal-500 focus:border-teal-900 font-bold px-5 rounded">
+							<svg class="h-6 w-6 fill-stroke" fill="none" viewBox=" 0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+							</svg>
+							<span class="pl-2">Generators</span></a>
+					</li>
+					<li class="mr-1">
+						<a href="https://www.tailwindtoolbox.com/marketplace" class="my-2 py-2 no-underline hover:no-underline text-gray-100 hover:text-white flex items-center justify-center bg-transparent hover:bg-teal-500 focus:border-teal-900 font-bold px-5 rounded">
+							<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<circle cx="9" cy="21" r="1" />
+								<circle cx="20" cy="21" r="1" />
+								<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+							</svg>
+							<span class="pl-2">Marketplace</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--/Nav-->
+
+
+	<!--Hero-->
+	<div class="z-20 mt-20 md:mt-16 lg:mt-6 flex items-center" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);">
+		<div class="flex flex-col w-full justify-center items-center pt-6 sm:pt-16">
+			<div class="px-3 max-w-3xl lg:max-w-full mx-auto">
+				<h1 class="pt-6">
+					<span class="bg-brand font-bold text-center text-white text-3xl sm:text-4xl px-3 mb-5 sm:mb-16 rounded-lg" style="box-decoration-break: clone;-webkit-box-decoration-break: clone;"><span>Free Tailwind CSS Templates, Components and Resources</span></span>
+				</h1>
+				<p class="max-w-3xl mx-auto leading-normal my-6 font-bold text-base lg:text-xl text-left lg:text-center">Open source starter <a href="https://www.tailwindtoolbox.com/starter-templates">templates</a> and <a href="https://www.tailwindtoolbox.com/starter-components">components</a>, a directory of handy <a href="https://www.tailwindtoolbox.com/kits">building kits</a>, <a href="https://www.tailwindtoolbox.com/generators">generators</a>, <a href="https://www.tailwindtoolbox.com/plugins">plugins</a> and useful <a href="https://www.tailwindtoolbox.com/tools">tools</a> to kick start your Tailwind CSS project</p>
+			</div>
+
+			<!--Search-->
+
+			<div class="w-full mx-auto mt-2">
+
+				<div class="relative max-w-3xl mx-auto px-6">
+					<div class="absolute h-10 mt-1 left-0 top-0 flex items-center pl-10">
+						<svg class="h-4 w-4 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+							<path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+						</svg>
+					</div>
+					<input id="search-toggle" type="search" placeholder="Enter search term ('/' to focus)" class="block w-full bg-gray-100 focus:outline-none focus:bg-white focus:shadow text-gray-700 font-bold rounded-lg pl-12 pr-4 py-3" onkeyup="updateSearchResults(this.value);">
+					<div class="mt-1">
+						<div id="search-content" class="z-50 w-full text text-gray-600 rounded-lg overflow-y-auto" style="max-height: 500px;">
+							<div id="searchresults" class="h-auto max-w-3xl mx-auto"></div>
+
+							<!-- No search results message-->
+							<div id="nosearchresults" class="hidden flex pb-6 px-6 bg-white">
+								<svg class="fill-current text-indigo-600 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+									<path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+								</svg>
+								<span class="ml-4 font-bold"> Oops, no search results!!!1</span>
+							</div>
+							<!-- / No search results -->
+						</div>
+					</div>
+				</div>
+
+				<!--Wave-->
+				<svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g transform="translate(-2.000000, 44.000000)" fill="#3b7977" fill-rule="nonzero">
+							<path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+							<path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z" opacity="0.100000001"></path>
+							<path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+						</g>
+						<g transform="translate(-4.000000, 76.000000)" fill="#ecf4f3" fill-rule="nonzero">
+							<path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"></path>
+						</g>
+					</g>
+				</svg>
+
+
+			</div>
+			<!--End Search-->
+
+
+
+
+		</div>
+
+
+	</div>
+
+
+	<div class="container mx-auto mb-8 flex inline-block flex-wrap">
+
+
+		<div class="w-full pb-6 mt-6 md:mt-12 md:w-1/5">
+			<div class="sticky pin-t" style="top:8em;">
+				<p class="text-brand text-center font-bold mb-2">Advertisment</p>
+				<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7D52JJ&placement=wwwtailwindtoolboxcom" id="_carbonads_js"></script>
+				<script src="//m.servedby-buysellads.com/monetization.custom.js" type="text/javascript"></script>
+				<div id="native-card-js" class="mx-auto mt-4"></div>
+				<script>
+					_bsa.init('custom', 'CESDV27N', 'placement:tailwindtoolboxcom', {
+						target: '#native-card-js',
+						template: `
+  <a href="##statlink##" class="native-card" style="background: ##backgroundColor##; color: ##textColor##;">
+    <img class="native-logo" src="##logo##">
+    <div class="native-tagline"> ##tagline##</div>
+    <div class="native-desc"> ##description##</div>
+    <div class="native-cta" style="background-color: ##ctaBackgroundColor##; color: ##ctaTextColor##">##callToAction##</div>
+    <div style="background-color: ##textColor##; color: ##backgroundColor##" class="native-sponsored">Sponsored</div>
+  </a>
+    `
+					});
+				</script>
+
+			</div>
+			<div></div>
+		</div>
+		<div class="w-full md:w-4/5 px-0">	<!--section-->
+	<div class="container mx-auto mb-16 mt-6" id="home-templates">
+		<div class="w-full px-1 md:px-0">
+
+			<h2 class="font-bold text-xl md:text-3xl text-brand text-center pb-4 md:pb-8">Popular Templates</h2>
+
+			<div class="flex flex-wrap items-stretch mb-2 md:px-3">
+
+				
+				<!--Landing Page Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Landing">
+					<a href="https://www.tailwindtoolbox.com/templates/landing-page" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/landing-page.png" alt="Landing Page">
+								
+							</div>
+
+							<div class="card-title">
+								Landing Page
+							</div>
+							<p class="card-description">
+								Bright landing page which can be used for many purposes
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Admin Template Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Admin">
+					<a href="https://www.tailwindtoolbox.com/templates/admin-template" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/admin-template.png" alt="Admin Template">
+								
+							</div>
+
+							<div class="card-title">
+								Admin Template
+							</div>
+							<p class="card-description">
+								Admin template to use for Admin theme, dashboard, or web application
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--App Landing Page Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Landing">
+					<a href="https://www.tailwindtoolbox.com/templates/app-landing-page" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/app-landing.png" alt="App Landing Page">
+								
+							</div>
+
+							<div class="card-title">
+								App Landing Page
+							</div>
+							<p class="card-description">
+								Barebones landing page layout for your app/play store app
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Rainblur Landing Page Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Landing">
+					<a href="https://www.tailwindtoolbox.com/templates/rainblur-landing-page" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/rainblur-landing-page.png" alt="Rainblur Landing Page">
+								
+							</div>
+
+							<div class="card-title">
+								Rainblur Landing Page
+							</div>
+							<p class="card-description">
+								Dark mode with gradients landing / coming soon page layout for your app/play store app
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Profile Card Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Portfolio">
+					<a href="https://www.tailwindtoolbox.com/templates/profile-card" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/profile-card.png" alt="Profile Card">
+								
+							</div>
+
+							<div class="card-title">
+								Profile Card
+							</div>
+							<p class="card-description">
+								Single page layout for use as a user profile / card (Includes ☀️/🌙 toggle)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Admin Template Night Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Admin">
+					<a href="https://www.tailwindtoolbox.com/templates/admin-template-night" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/admin-template-night.png" alt="Admin Template Night">
+								
+							</div>
+
+							<div class="card-title">
+								Admin Template Night
+							</div>
+							<p class="card-description">
+								Night Mode Admin template for those who prefer to work at night
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Admin Template Day Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Admin">
+					<a href="https://www.tailwindtoolbox.com/templates/admin-template-day" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/admin-template-day.png" alt="Admin Template Day">
+								
+							</div>
+
+							<div class="card-title">
+								Admin Template Day
+							</div>
+							<p class="card-description">
+								Day Mode Admin template for those who prefer to work in the am
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Nordic Store Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Store">
+					<a href="https://www.tailwindtoolbox.com/templates/nordic-store" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/nordic-store.png" alt="Nordic Store">
+								
+							</div>
+
+							<div class="card-title">
+								Nordic Store
+							</div>
+							<p class="card-description">
+								Nordic inspired e-commerce product listing template to kick start your store
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Minimal Admin Template Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Admin">
+					<a href="https://www.tailwindtoolbox.com/templates/minimal-admin-template" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/minimal-admin-template.png" alt="Minimal Admin Template">
+								
+							</div>
+
+							<div class="card-title">
+								Minimal Admin Template
+							</div>
+							<p class="card-description">
+								Minimal Admin template to use for Admin theme, dashboard, or web application
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Screenshot Landing Page Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Landing">
+					<a href="https://www.tailwindtoolbox.com/templates/screenshot-landing-page" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/screenshot-landing-page.png" alt="Screenshot Landing Page">
+								
+							</div>
+
+							<div class="card-title">
+								Screenshot Landing Page
+							</div>
+							<p class="card-description">
+								Landing page to promote a screenshot which can be used for many purposes
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Ghostwind Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Blog">
+					<a href="https://www.tailwindtoolbox.com/templates/ghostwind" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/ghostwind.png" alt="Ghostwind">
+								
+							</div>
+
+							<div class="card-title">
+								Ghostwind
+							</div>
+							<p class="card-description">
+								Blog post template in style of the default Casper theme for Ghost
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Minimal Blog Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Blog">
+					<a href="https://www.tailwindtoolbox.com/templates/minimal-blog" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/minimal-blog.png" alt="Minimal Blog">
+								
+							</div>
+
+							<div class="card-title">
+								Minimal Blog
+							</div>
+							<p class="card-description">
+								Minimal monochrome blog post template, with a splash of colour
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<div class="w-full my-10 pb-3 sm:pb-0 flex-grow text-center">
+					<a href="https://www.tailwindtoolbox.com/starter-templates" class="bg-brand hover:bg-teal-dark no-underline text-white hover:text-white text-xl border-none rounded font-bold p-4">Show all templates</a>
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>	<!--section-->
+	<div class="container mx-auto mb-16 mt-6" id="home-affiliates">
+		<div class="w-full px-1 md:px-0">
+
+			<h2 class="font-bold text-xl md:text-3xl text-brand text-center pb-4 md:pb-8">Promoted Content</h2>
+
+			<div class="flex flex-wrap items-stretch mb-2 md:px-3">
+
+				
+				<!--Cruip Template Pack [$] Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Template">
+					<a href="https://cruip.com/?ref=tailwindtoolbox" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="cruip.png" alt="Cruip Template Pack [$]">
+								
+								<span class="absolute bottom-0 w-full py-1 tracking-wider text-gray-800 text-center text-xs font-bold" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);opacity:0.75;">AFFILIATE SCHEME</span>
+							</div>
+
+							<div class="card-title">
+								Cruip Template Pack [$]
+							</div>
+							<p class="card-description">
+								Beautifully designed landing page templates and dashboards built on top of Tailwind CSS, React, and Vue (Affiliate Link)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Flowbite UI [$] Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="UI Kit">
+					<a href="https://a.paddle.com/v2/click/113942/124350?link=3345" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/flowbiteui.png" alt="Flowbite UI [$]">
+								
+								<span class="absolute bottom-0 w-full py-1 tracking-wider text-gray-800 text-center text-xs font-bold" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);opacity:0.75;">AFFILIATE SCHEME</span>
+							</div>
+
+							<div class="card-title">
+								Flowbite UI [$]
+							</div>
+							<p class="card-description">
+								Figma design kit built for integration with Tailwind CSS featuring UI components and an admin dashboard layout. Built by Themesberg. (Affiliate Link)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Inspect Flow [$] Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Brower">
+					<a href="https://www.inspectflow.io?lmref=v1hDoA" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="toolsutilities/inspectflow.jpg" alt="Inspect Flow [$]">
+								
+								<span class="absolute bottom-0 w-full py-1 tracking-wider text-gray-800 text-center text-xs font-bold" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);opacity:0.75;">AFFILIATE SCHEME</span>
+							</div>
+
+							<div class="card-title">
+								Inspect Flow [$]
+							</div>
+							<p class="card-description">
+								The complete developer tool for Tailwind CSS! Increase your productivity and build websites faster. (Affiliate Link)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Notus Pro React [$] Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Admin">
+					<a href="https://www.creative-tim.com/product/notus-pro-react/?partner=145458 " class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="products/notusproreact.jpg" alt="Notus Pro React [$]">
+								
+								<span class="absolute bottom-0 w-full py-1 tracking-wider text-gray-800 text-center text-xs font-bold" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);opacity:0.75;">AFFILIATE SCHEME</span>
+							</div>
+
+							<div class="card-title">
+								Notus Pro React [$]
+							</div>
+							<p class="card-description">
+								This beautiful UI Kit & Admin is built with multiple components for different projects. (Affiliate Link)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Saas Blocks [$] Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="UI Kit">
+					<a href="https://gumroad.com/a/334402675/FbINx" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="products/saasblocks.jpg" alt="Saas Blocks [$]">
+								
+								<span class="absolute bottom-0 w-full py-1 tracking-wider text-gray-800 text-center text-xs font-bold" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);opacity:0.75;">AFFILIATE SCHEME</span>
+							</div>
+
+							<div class="card-title">
+								Saas Blocks [$]
+							</div>
+							<p class="card-description">
+								SaaS Blocks is a Tailwind CSS theme that also comes with Figma variation files. Use it to extend your Tailwind components or create an entire website with perfectly stackable sections (Affiliate Link)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Tails [$] Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="UI Kit, Page Builder">
+					<a href="https://a.paddle.com/v2/click/37973/124350?link=3167" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/tails.jpg" alt="Tails [$]">
+								
+								<span class="absolute bottom-0 w-full py-1 tracking-wider text-gray-800 text-center text-xs font-bold" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);opacity:0.75;">AFFILIATE SCHEME</span>
+							</div>
+
+							<div class="card-title">
+								Tails [$]
+							</div>
+							<p class="card-description">
+								Tails is the ultimate drag'n drop page creator built for Tailwind CSS (Affiliate Link)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Wicked Templates [$] Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="Template">
+					<a href="https://gumroad.com/a/642815091" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="wicked.png" alt="Wicked Templates [$]">
+								
+								<span class="absolute bottom-0 w-full py-1 tracking-wider text-gray-800 text-center text-xs font-bold" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);opacity:0.75;">AFFILIATE SCHEME</span>
+							</div>
+
+							<div class="card-title">
+								Wicked Templates [$]
+							</div>
+							<p class="card-description">
+								HTML responsive templates ready to use out of the box. For startups & personal use (Affiliate Link)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Windyblocks [$] Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="UI Kit">
+					<a href="https://gumroad.com/a/84153459" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="templates/windyblocks.png" alt="Windyblocks [$]">
+								
+								<span class="absolute bottom-0 w-full py-1 tracking-wider text-gray-800 text-center text-xs font-bold" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);opacity:0.75;">AFFILIATE SCHEME</span>
+							</div>
+
+							<div class="card-title">
+								Windyblocks [$]
+							</div>
+							<p class="card-description">
+								Windyblocks, the prototyping kit for Tailwind CSS, with more than 225 handcrafted components (Affiliate Link)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+			</div>
+
+
+		</div>
+	</div>	<!--section-->
+	<div class="container mx-auto mb-16 mt-6" id="home-components">
+		<div class="w-full px-1 md:px-0">
+
+			<h2 class="font-bold text-xl md:text-3xl text-brand text-center pb-4 md:pb-8">Popular Components</h2>
+
+			<div class="flex flex-wrap items-stretch mb-2 md:px-3">
+
+				
+				<!--Modal Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="HTML">
+					<a href="https://www.tailwindtoolbox.com/components/modal" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="components/modal.gif" alt="Modal">
+								
+							</div>
+
+							<div class="card-title">
+								Modal
+							</div>
+							<p class="card-description">
+								Simple pop up modal with full screen overlay
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Full Screen Modal Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="HTML">
+					<a href="https://www.tailwindtoolbox.com/components/fullscreen-modal" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="components/fullscreen-modal.gif" alt="Full Screen Modal">
+								
+							</div>
+
+							<div class="card-title">
+								Full Screen Modal
+							</div>
+							<p class="card-description">
+								Simple full screen modal with full screen overlay
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Accordion Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="HTML">
+					<a href="https://www.tailwindtoolbox.com/components/accordion" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="components/accordion.gif" alt="Accordion">
+								
+							</div>
+
+							<div class="card-title">
+								Accordion
+							</div>
+							<p class="card-description">
+								Simple accordions - open multiple panels or just a single one
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Mega Menu Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="HTML">
+					<a href="https://www.tailwindtoolbox.com/components/megamenu" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="components/megamenu.png" alt="Mega Menu">
+								
+							</div>
+
+							<div class="card-title">
+								Mega Menu
+							</div>
+							<p class="card-description">
+								A click or hover driven mega menu
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Alerts Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="HTML">
+					<a href="https://www.tailwindtoolbox.com/components/alerts" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="components/alerts.png" alt="Alerts">
+								
+							</div>
+
+							<div class="card-title">
+								Alerts
+							</div>
+							<p class="card-description">
+								Dismissable Alerts (Toasts) only using CSS
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Responsive Table Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="HTML">
+					<a href="https://www.tailwindtoolbox.com/components/responsive-table" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="components/responsive-table.gif" alt="Responsive Table">
+								
+							</div>
+
+							<div class="card-title">
+								Responsive Table
+							</div>
+							<p class="card-description">
+								A responsive table using Datatables.net
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Centered Page Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="HTML">
+					<a href="https://www.tailwindtoolbox.com/components/centered-page" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="components/centered-page.png" alt="Centered Page">
+								
+							</div>
+
+							<div class="card-title">
+								Centered Page
+							</div>
+							<p class="card-description">
+								A div centered in the middle of the page
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<!--Carousel Template-->
+				<div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0" data-twcat="HTML">
+					<a href="https://www.tailwindtoolbox.com/components/carousel" class="no-underline hover:no-underline">
+						<div class="card">
+							<div class="relative">
+								<img src="components/carousel.gif" alt="Carousel">
+								
+							</div>
+
+							<div class="card-title">
+								Carousel
+							</div>
+							<p class="card-description">
+								Simple CSS-only Carousel with indicators (requires clicks to toggle)
+							</p>
+
+						</div>
+					</a>
+				</div>
+			
+				
+				<div class="w-full my-10 pb-3 sm:pb-0 flex-grow text-center">
+					<a href="https://www.tailwindtoolbox.com/starter-components" class="bg-brand hover:bg-teal-dark no-underline text-white hover:text-white text-xl border-none rounded font-bold p-4">Show all components</a>
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div></div>
+	</div><footer class="bg-gray-700 text-gray-100 px-2 pt-0 pb-2 mt-0">
+	<div class="container mx-auto py-8">
+
+		<div class="flex flex-wrap mb-2 px-4">
+			<!--Col 1-->
+			<div class="w-full md:w-1/3 text-center md:text-left px-3 mb-2 md:mb-0 pb-3 sm:pb-0">
+				<p class="text-white font-bold text-xl my-3">What is Tailwind CSS?</p>
+				<p><a class="footerlink" href="http://www.tailwindcss.com" target="_blank" rel="noopener">Tailwind CSS</a> is a utility-first CSS framework for rapid UI development created by <a class="footerlink" href="https://twitter.com/adamwathan" target="_blank" rel="nofollow">Adam Wathan</a>, <a class="footerlink" href="https://twitter.com/reinink" target="_blank" rel="nofollow">Jonathan Reinink</a>, <a class="footerlink" href="https://twitter.com/davidhemphill" target="_blank" rel="nofollow">David Hemphill</a> and <a class="footerlink" href="https://twitter.com/steveschoger" target="_blank" rel="nofollow">Steve Schoger</a></p>
+			</div>
+			<!--Col 2-->
+			<div class="w-full md:w-1/3 text-center md:text-left px-3 sm:px-1 mb-2 md:mb-0 pb-3 sm:pb-0">
+
+			</div>
+			<!--Col 3-->
+			<div class="w-full md:w-1/3 text-center md:text-left px-3 sm:px-1 mb-2 md:mb-0 pb-3 sm:pb-0">
+				<p class="text-white font-bold text-xl my-3">About Tailwind Toolbox</p>
+
+				<p><a class="footerlink" href="https://www.tailwindtoolbox.com" target="_blank" rel="noopener">Tailwind Toolbox</a> is a project created by and maintained by <a class="footerlink" href="https://twitter.com/amritnagi">Amrit Nagi</a>. Not affiliated with Tailwind Labs, just a huge fan.</p>
+
+				<a href="https://www.tailwindtoolbox.com/submit" class="my-2 py-2 no-underline hover:no-underline hover:text-white flex items-center justify-center bg-brand hover:bg-teal-500 outline-none focus:border-teal-900 text-white font-extrabold px-5 rounded shadow">
+					<svg class="inline fill-current text-teal-lightest h-4 pr-2 md:pr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M3 6c0-1.1.9-2 2-2h8l4-4h2v16h-2l-4-4H5a2 2 0 0 1-2-2H1V6h2zm8 9v5H8l-1.67-5H5v-2h8v2h-2z" />
+					</svg>
+					Suggest a resource</a>
+
+
+				<p class="pt-6 flex items-center">
+					<a class="footerlink pr-3" href="https://simpleanalytics.io/tailwindtoolbox.com" target="_blank" rel="noopener"><svg class="inline fill-current text-brand-ondark w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+							<title>Privacy first tracking</title>
+							<path d="M1 10h3v10H1V10zM6 0h3v20H6V0zm5 8h3v12h-3V8zm5-4h3v16h-3V4z" />
+						</svg></a>
+					<a class="footerlink pr-3" href="https://www.github.com/tailwindtoolbox" target="_blank" rel="noopener"><svg class="inline fill-current text-brand-ondark w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+							<title>GitHub</title>
+							<path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path>
+						</svg></a>
+					<a class="footerlink pr-3" href="https://www.twitter.com/tailwindtoolbox" target="_blank" rel="noopener"><svg class="inline fill-current text-brand-ondark w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+							<title>Twitter - @tailwindtoolbox</title>
+							<path d="M6.29 18.25c7.55 0 11.67-6.25 11.67-11.67v-.53c.8-.59 1.49-1.3 2.04-2.13-.75.33-1.54.55-2.36.65a4.12 4.12 0 0 0 1.8-2.27c-.8.48-1.68.81-2.6 1a4.1 4.1 0 0 0-7 3.74 11.65 11.65 0 0 1-8.45-4.3 4.1 4.1 0 0 0 1.27 5.49C2.01 8.2 1.37 8.03.8 7.7v.05a4.1 4.1 0 0 0 3.3 4.03 4.1 4.1 0 0 1-1.86.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 0 16.4a11.62 11.62 0 0 0 6.29 1.84"></path>
+						</svg></a>
+					<a class="footerlink pr-3" href="https://www.buymeacoffee.com/tailwindtoolbox" target="_blank" rel="noopener"><svg class="inline fill-current text-brand-ondark w-6 h-6" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<title>If this site helped you, why not buy me a coffee?</title>
+							<path d="m4 11v0.0068977c0 2.2058 1.7878 3.9931 3.9931 3.9931h6.0138c2.2058 0 3.9931-1.7878 3.9931-3.9931v-10.007h-14v2h-1.9951c-1.111 0-2.0049 0.89458-2.0049 1.9981v4.0038c0 1.1114 0.89762 1.9981 2.0049 1.9981h1.9951zm0-2v-4h-2v4h2zm-2 8v-1h18v1l-4 2h-10l-4-2z" />
+						</svg></a>
+					<svg onclick="javascript:alert('Tailwind Toolbox is a cookie free zone!!');" class="inline fill-current text-brand-ondark w-6 h-6" enable-background="new 0 0 1000 1000" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+						<title>A cookie free zone!</title>
+						<g transform="translate(0 511) scale(.1 -.1)">
+							<path d="m6677.5 4915.2c-63.8-52.5-127.5-180-202.5-416.3-142.5-450-131.3-476.3 315-656.2 367.5-146.2 495-165 573.7-82.5 26.3 26.3 138.8 236.3 251.3 461.3 288.7 585 255 656.2-333.8 705-153.7 11.2-333.8 30-393.8 41.3-78.7 14.9-142.4-3.9-209.9-52.6z" />
+							<path d="m4431.2 4772.7c-52.5-7.5-221.2-33.7-375-56.3-386.2-56.3-930-232.5-1327.5-431.2-1170-585-2070-1650-2437.5-2872.5-168.7-566.2-191.2-735-191.2-1417.5 3.8-585 15-701.3 105-1061.2 116.3-461.3 307.5-945 513.8-1301.3 1278.7-2190 4042.5-3015 6281.2-1871.2 465 240 832.5 506.3 1218.7 896.3 723.7 720 1207.5 1676.2 1350 2658.7 26.3 161.3 37.5 536.3 30 828.8-15 637.5-33.7 667.5-393.8 663.8-420-3.8-686.2 225-780 667.5-30 142.5-75 270-101.3 288.8-63.8 41.2-228.7 18.8-442.5-63.8-476.1-180.1-1091.1 97.4-1316.1 596.1-97.5 213.8-93.8 626.3 3.7 843.7 97.5 210 93.8 251.3-18.8 360-63.8 67.5-131.3 93.8-232.5 93.8-191.2 0-416.2 135-551.3 326.3-90 131.3-112.5 202.5-127.5 442.5-22.5 378.8-45 393.7-652.5 412.5-251.1 7.5-502.4 7.5-554.9-3.8zm7.5-978.8c93.8-86.2 82.5-210-30-348.7-93.8-108.7-97.5-127.5-52.5-258.7 52.5-165 26.3-288.8-82.5-345-127.5-71.2-251.2-7.5-330 165-127.5 277.5-86.2 513.8 123.7 731.2 127.6 135 262.6 153.8 371.3 56.2zm-746.2-1068.7c37.5-30 101.3-202.5 157.5-435 108.7-446.3 116.3-543.8 37.5-607.5-67.5-56.3-712.5-225-870-225-165 0-210 82.5-315 551.3-116.3 532.5-108.7 540 386.3 660 449.9 112.5 517.4 116.2 603.7 56.2zm1665-558.7c176.3-86.2 348.7-326.2 348.7-483.8 0-123.7-105-225-228.7-225-78.8 0-127.5 37.5-210 161.2-93.8 138.8-127.5 157.5-266.2 168.8-108.8 7.5-172.5 37.5-213.8 93.8-78.8 112.5-71.3 165 37.5 270 116.2 120 307.5 123.7 532.5 15zm-3401.3-1158.8c41.3-41.3 75-105 75-142.5 0-93.8-105-232.5-176.3-232.5-97.5 0-198.7-116.3-198.7-232.5 0-123.7-116.3-255-232.5-255-300 0-288.7 532.5 18.8 791.3 172.5 146.2 408.7 176.2 513.7 71.2zm1665-341.2c195-153.8 78.8-521.2-168.8-521.2-153.8 0-217.5 33.8-281.2 153.8-67.5 135-37.5 273.7 86.3 371.2 123.7 97.4 240 93.7 363.7-3.8zm4016.3-198.8c577.5-165 558.8-116.3 315-967.5-105-356.3-127.5-363.8-663.8-217.5-453.8 123.7-570 187.5-570 303.7 0 135 225 873.8 288.8 941.3 78.7 90 142.5 82.5 630-60zm-2171.3-56.2c566.3-258.7 390-1098.8-228.7-1098.8-206.3 0-378.8 97.5-498.7 273.7-75 105-86.3 165-75 345 15 172.5 37.5 236.3 127.5 330 206.2 221.3 416.2 266.3 674.9 150.1zm-3e3 -551.3c558.8-266.2 367.5-1102.5-247.5-1102.5-285 0-532.5 210-581.2 483.7-41.3 255 138.8 555 393.7 652.5 108.8 41.3 311.3 26.3 435-33.7zm4181.2-986.2c127.5-131.3 138.8-255 30-393.8-56.3-71.2-108.8-97.5-213.8-97.5-330 0-427.5 397.5-138.8 555 123.9 67.5 206.4 52.5 322.6-63.7zm-1346.2-367.5c101.3-90 82.5-217.5-48.8-352.5-97.5-101.2-112.5-135-90-236.2 60-255 3.7-360-191.3-360-146.2 0-228.8 101.3-266.3 311.3-33.7 221.3 18.8 390 172.5 551.3 157.7 164.8 303.9 194.8 423.9 86.1zm-1687.5-540c202.5-26.2 363.7-67.5 412.5-108.7 75-60 78.7-75 33.7-491.3-52.5-491.2-93.8-626.2-206.3-656.2-41.2-7.5-281.2 7.5-528.7 37.5-487.5 60-543.7 90-543.7 300 0 240 86.2 795 135 877.5 63.8 97.4 187.5 104.9 697.5 41.2zm3236.3-273.8c116.2-78.7 243.8-322.5 243.8-472.5 0-180-90-356.2-243.8-472.5-180-135-480-150-645-30-438.8 326.3-330 952.5 187.5 1061.2 142.5 33.8 329.9-3.7 457.5-86.2zm-1841.3-1076.2c135-63.7 195-228.7 135-371.2-127.5-311.2-562.5-221.3-562.5 116.2 0 228.8 206.3 352.5 427.5 255z" />
+							<path d="m8604.9 4007.7c-176.3-71.2-217.5-345-75-480 120-112.5 303.8-108.8 420 11.2 123.8 123.7 120 262.5-15 397.5-112.5 112.6-187.5 127.6-330 71.3z" />
+							<path d="m7300 3051.5c-236.3-232.5 22.5-603.7 337.5-483.7 93.7 37.5 176.2 232.5 150 356.2-48.8 221.2-322.5 296.2-487.5 127.5z" />
+							<path d="m8826.2 2871.5c-206.3-131.2-318.8-225-333.8-285-22.5-93.8 292.5-941.3 390-1035 116.2-120 228.7-67.5 603.7 288.8 198.8 187.5 378.8 382.5 397.5 427.5 48.8 116.3 0 198.7-311.3 532.5-183.7 195-277.5 270-345 266.3-48.6-0.1-228.6-90.1-401.1-195.1z" />
+						</g>
+					</svg>
+					<a class="pl-3" href="https://simpleanalytics.com/tailwindtoolbox.com?utm_source=tailwindtoolbox.com&utm_content=badge" referrerpolicy="origin" target="_blank"><img src="https://simpleanalyticsbadge.com/tailwindtoolbox.com?mode=dark&counter=true" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" /></a>
+				</p>
+			</div>
+		</div>
+
+	</div>
+</footer><div class="hover:bg-teal-100 text-indigo-300 font-normal"></div><span class="hidden p-4 border-b flex justify-between items-center group hover:bg-teal-100"><a class="block flex-1 no-underline" href="#">
+			<p class="font-bold text-sm text-indigo-600 hover:text-indigo-500"><span class="mr-2 text-teal-500">#</span><span class="text-indigo-300 font-normal">by author <svg class="inline-block pl-2  h-4 fill-current text-brand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<path d="M9.26 13a2 2 0 0 1 .01-2.01A3 3 0 0 0 9 5H5a3 3 0 0 0 0 6h.08a6.06 6.06 0 0 0 0 2H5A5 5 0 0 1 5 3h4a5 5 0 0 1 .26 10zm1.48-6a2 2 0 0 1-.01 2.01A3 3 0 0 0 11 15h4a3 3 0 0 0 0-6h-.08a6.06 6.06 0 0 0 0-2H15a5 5 0 0 1 0 10h-4a5 5 0 0 1-.26-10z" />
+					</svg></span></p>
+			<p class="hidden md:block text-xs text-teal-600">result</p>
+			<p class="text-sm py-1">description</p>
+		</a><a href="#"><img class="hidden md:block h-16 border-none" src="https://www.tailwindtoolbox.com/"></a></span><script src='https://cdnjs.cloudflare.com/ajax/libs/fuse.js/2.5.0/fuse.min.js'></script>
+<script src="includes/data.json"></script>
+<script>
+/*Fuse*/
+var options = {
+  shouldSort: true,
+  tokenize: true,
+  threshold: 0.8,
+  location: 0,
+  distance: 40,
+  maxPatternLength: 32,
+  minMatchCharLength: 1,
+  keys: [
+    "title",
+    "description",
+    "category",
+    "author"
+  ]
+};
+
+var obj;
+var fuse;
+
+fetch('./includes/data.json')
+.then(res => res.json())
+.then(data => obj = data)
+.then(() => fuse = new Fuse(obj, options))
+</script>
+<script src="js/app.min.js?v=20191019"></script></body>
+
+</html>
